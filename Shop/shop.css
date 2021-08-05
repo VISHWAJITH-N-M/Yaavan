@@ -3,6 +3,7 @@
     padding:0;
     font-family: 'Quicksand', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -36,7 +37,7 @@ a{
     justify-content: space-between;
     background-size:cover;
     width:100%;
-    background-color: #fff;
+    background-color: #F2F4F4;
 }
 .navBar1 ul{
     display: flex;
@@ -431,7 +432,7 @@ a{
 
 }
 .products::-webkit-scrollbar{
-    height: 10px;
+    height: 5px;
     border-radius: 10px;   
 }
 .products::-webkit-scrollbar-track{
@@ -445,6 +446,19 @@ a{
 }
 .oil .products::-webkit-scrollbar{
     height:0;
+}
+.productitem .productitemOverlay{
+    display: none;
+    position: absolute;
+    top:0;
+    background-color: white;
+    opacity:0;
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+}
+.productitem:hover .productitemOverlay{
+    opacity: 30%;
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2181,32 +2195,86 @@ a{
 .category p{
     font-size: clamp(16px,18px,20px);
 }
-.category a{
-
-}
 .productitem{
     position: relative;
     min-width: calc(100%/4);
     text-align: center;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .productitem img{
     transition: 0.3s;
-    height: 77%;
-}
-.productitem:hover img{
     height: 65%;
 }
-
 .productitem p{
-    position: absolute;
-    bottom: 10%;
     text-align: center;
     left:50%;
-    transform: translateX(-50%);
     font-weight: 500;
     font-size: clamp(14px,16px,18px);
+    margin: 10px;
+}
+.info{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    top:50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+    height: 25%;
+    right: 0;
+    width: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transition: 0.3s;
+}
+#infop1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 45%;
+    border-radius: 50px 0px 50px 0;
+}
+#infop1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#infop2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 80%;
+    border-radius: 50px 0px 50px 0;
+}
+.info a{
+    color: white;
+}
+.info img{
+    height: 10px;
+}
+.productitem:hover .info{
+    opacity: 100%;
+    width: 60%;
+}
+#buy{
+    font-weight: 700;
+}
+#buy::before{
+    display: block;
+    content: '';
+    width: 0;
+    height: 1px;
+    opacity: 50%;
+    background-color: black;
+    margin: 10px auto;
+    transition: .3s;
+}   
+.productitem:hover #buy::before{
+    width: 50%;
 }
 .spices .category{
     background-image: url('https://images.unsplash.com/photo-1577574026212-dcc9622e2622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80');
@@ -2220,11 +2288,20 @@ a{
     right:50%;
     left:50%;
     transform: translateX(-50%);
-    width: 160%;
+    width: 140%;
     transition: 0.3s;
 }
 .spices .category:hover img{
-    width: 150%;
+    width: 130%;
+}
+.spices #infop1{
+    background-color: #424949;
+}
+.spices #infop2{
+    background-color: #424949;
+}
+.spices .productitem:hover #buy a{
+    color: #C0392B;
 }
 .cereals .category{
     background-image: url('https://images.pexels.com/photos/4224314/pexels-photo-4224314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -2238,6 +2315,15 @@ a{
 }
 .cereals .category:hover{
     background-size: 160%;
+}
+.cereals #infop1{
+    background-color: #424949;
+}
+.cereals #infop2{
+    background-color: #424949;
+}
+.cereals .productitem:hover #buy a{
+    color: #D4AC0D;
 }
 .sugar .category{
     position: relative;
@@ -2258,7 +2344,16 @@ a{
 }
 .sugar .category:hover img{
     width: 105%;
-}   
+} 
+.sugar #infop1{
+    background-color: #424949;
+}
+.sugar #infop2{
+    background-color: #424949;
+} 
+.sugar .productitem:hover #buy a{
+    color: #D35400;
+}
 .oil .category{
     position: relative;
     background-size: cover;
@@ -2278,11 +2373,16 @@ a{
 .oil .category:hover img{
     height: 40%
 }
-
-.pulse .category{
-    background-image: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-    background-size: cover;
+.oil #infop1{
+    background-color: #424949;
 }
+.oil #infop2{
+    background-color: #424949;
+} 
+.oil .productitem:hover #buy a{
+    color: #1D8348;
+} 
+
 .honey .category{
     position: relative;
     background-image: url('https://images.unsplash.com/photo-1517093372760-6f91eb1ac1e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
@@ -2292,6 +2392,15 @@ a{
 }
 .honey .category:hover{
     background-size: 110%;
+}
+.honey #infop1{
+    background-color: #424949;
+}
+.honey #infop2{
+    background-color: #424949;
+}  
+.honey .productitem:hover #buy a{
+    color: #D4AC0D;
 }
 .dry .category{
     background-image: url('images/dryfruits.jpg');
@@ -2303,14 +2412,17 @@ a{
 .dry .category p{
     color: black;
 }
-.dry .productitem img{
-    height: 60%;
-}
-.dry .productitem:hover img{
-    height: 50%;
-}
 .dry .category:hover {
     background-position-y: 80%;
+}
+.dry #infop1{
+    background-color: #424949;
+}
+.dry #infop2{
+    background-color: #424949;
+}  
+.dry .productitem:hover #buy a{
+    color: #8B4000;
 }
 .footer{
     width: 100%;
