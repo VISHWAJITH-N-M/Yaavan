@@ -11,11 +11,6 @@ body{
     background-color: #F2F4F4;
     background-size: 100%;
 }
-.sample{
-    width:100%;
-    height: 10vh;
-    background-color: #7cb215;
-}
 .content{
     width: 100%;
     max-width: 1920px;
@@ -37,13 +32,15 @@ a{
     justify-content: space-between;
     background-size:cover;
     width:100%;
-    background-color: #F2F4F4;
+    background: #EBEDEF;  /* fallback for old browsers */
+background: -webkit-radial-gradient(#F4F6F7,#E5E8E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .navBar1 ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 70%;
 }
 .navBar1 ul li{
     display: inline;
@@ -90,14 +87,7 @@ a{
     width: 30%;
     height:100%;  
 }
-.extra{
-    display: grid;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-    grid-template-columns: 25% 80%;
-    grid-template-rows: 60% 40%;
-}
+
 #organic{
     margin:0 auto;
     grid-row: span 2;
@@ -218,7 +208,7 @@ a{
     left: -100px;
     transition: 0.3s;
 }
-.grid1 .grid1Content h1{
+.grid1 .grid1Content #grid1_title{
     margin-top: 12%;
     left: 15%;
     position:relative;
@@ -432,7 +422,7 @@ a{
 
 }
 .products::-webkit-scrollbar{
-    height: 5px;
+    height: 7px;
     border-radius: 10px;   
 }
 .products::-webkit-scrollbar-track{
@@ -465,7 +455,365 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:780px) and (min-width: 610px){
+@media (max-width:580px) and (min-width: 485px){
+.web{
+    display: none;
+}
+.mobilenav1{
+    display: flex;
+    width: 100%;
+    max-height: 60px;
+    height: 60px;
+    min-height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.navelement1{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    height: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50px;
+    height:100%
+}
+#Mlogo{
+    height: 100%;   
+}
+.navelement2{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 60% 40%;
+    align-items: center;
+}
+.navelement2 img{
+    grid-row: span 2;
+    height: 90%;
+}
+.navelement2 h1{
+    display: inline-block;
+background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: clamp(18px,20px,22px);
+align-self: flex-end;
+}
+.navelement2 p{
+    display: inline-block;
+    align-self: flex-start;
+background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: clamp(8px,10px,12px);
+font-weight: 700;
+}
+.mobilenav2{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    color:white;
+    background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+    background-size: cover;
+}
+.mobilenav2 h1{
+    font-size: clamp(12px,14px,16px);
+}
+.gridContainer{
+    min-height:400px;
+    display: grid;
+    overflow: hidden;
+    width:95%;
+    margin: 25px auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    border-radius: 5px;
+}
+.grid1 .grid1Content h1{
+    margin-top: 10%;
+    left: 10%;
+    position:relative;
+    color: #641E16;
+    font-weight: 400;
+}
+.grid1 .grid1Content p{
+    margin-top:5px;
+    left: 10%;
+    color:#C11B17;
+    position:relative;
+}
+.grid1 .grid1Content #a{
+    position: relative;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 500;  
+}
+.grid1 .grid1Content h1{
+    font-size: clamp(24px,2.5vw,70px);
+}
+.grid1 .grid1Content h1 img{
+    height: 40px;
+}
+#a a{
+    font-size: 16px;
+}
+#smallpic{
+    height: 80%;
+}
+.grid1:hover .grid1Content #product1{
+    right: 4%;
+}
+.grid1 .grid1Content #smallpic{
+    height: 60%;
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    transition: 0.3s;
+}
+.grid1:hover .grid1Content #smallpic{
+    height: 70%;
+}
+.grid1 ul{
+    width: 60px;
+    bottom:40px;
+    right:22%;
+}
+.grid1 ul li{
+    height: 25px;
+    width: 25px;
+}
+#left img{
+    height: 8px;
+}
+#right img{
+    height: 8px;
+}
+.grid2{
+    display: none;
+}
+.grid3{
+    display: none;
+}
+.mcategory{
+    display: block;
+    height: 40vh;
+    min-height: 400px;
+    max-height: 400px;
+    width: 95%;
+    margin: 25px auto;
+    border-radius: 3px;
+    background-color: white;
+}
+.mobileTitle{
+    top: 15px;
+    height: 8vh;
+    min-height: 80px;
+    max-height: 80px;
+    width: 95%;
+    margin: 0px auto;
+    border-radius: 3px;
+}
+.mcatename{
+    width: 95%;
+    position: relative;
+    font-size: clamp(20px, 22px, 24px);
+    font-weight: 500;
+    margin: 10px auto;
+    top: 10px;
+}
+.mcatename::after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 100%;
+    margin: 10px auto;
+    opacity: 30%;
+    background-color: black;
+}
+.mcontent{
+    position: absolute;
+    top: 18%;
+    bottom: 80%;
+    left: 15%;
+    text-align: center;
+    transition: 0.3s;
+}
+.mcontent h1{
+    font-size: clamp(18px,20px,22px);
+}
+.mcontent p{
+    font-size: clamp(14px,16px,18px);
+    color: white;
+}
+.mcontent::after{
+    display: block;
+    position:absolute;
+    top: -5px;
+    right: -20px;
+    content: '';
+    background-color: white;
+    height: 60px;
+    width: 2px;
+    opacity: 0%;
+    transition: 0.5s;
+}
+.mcateshop p{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    left:240px;
+    top:31%;
+    opacity: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.mcateshop p a{
+    font-size: clamp(10px,12px,14px);
+}
+.mcategory:hover .mcontent{
+    left: 5%;
+}
+.mcategory:hover .mcontent::after{
+    opacity: 100%;
+}
+.mcategory:hover .mcateshop p{
+    opacity: 100%;
+}
+
+.mproductcontainer{
+    top:50%;
+    bottom: 50%;
+    transform: translate(0%,-70%);
+    margin: 0 auto;
+    position: relative;
+    height: 230px;
+    width: 95%;
+    display: flex;
+    overflow-x:auto; 
+}
+.mproduct{
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 0px;
+    min-width: calc(100%/3);
+    max-width: calc(100%/3);
+    margin-right:10px;
+    overflow-x: hidden;
+}
+.mproduct img{
+    height: 70%;
+}
+.sugar .mobileTitle{
+    background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+    overflow: hidden;
+    position: relative;
+}
+.sugar .mobileTitle img{
+    position: absolute;
+    right: -20px;
+    top: 0px;
+    height: 260%;
+    transition:.3s;
+}
+.sugar:hover .mobileTitle img{
+    right: -50px;
+}
+.sugar h1{
+    color:#FFAA33;
+}
+
+.cereal .mobileTitle{
+    background-image: url('images/cerealbg.jpg');
+    overflow: hidden;
+    position: relative;
+}
+.cereal .mobileTitle img{
+    position: absolute;
+    right: -120px;
+    top: -15px;
+    height: 200%;
+    transition:.3s;
+}
+.cereal:hover .mobileTitle img{
+    right: -150px;
+}
+.cereal h1{
+    color:#E4D00A;
+    font-size: clamp(20px,22px,24px);
+}
+.cereal .mcontent p{
+    color:white;
+}
+.oil .mobileTitle{
+    position: relative;
+    background-image: url('images/poster5.jpg');
+    overflow: hidden;
+}
+.oil .mobileTitle img{
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    height: 95%;
+
+}
+.oil .mcontent h1{
+    color:#7cb215;
+}
+.oil .mproductcontainer{
+    overflow: hidden;
+}
+.spice .mobileTitle{
+    position: relative;
+    background-image: url('images/spicebg.jpg');
+    overflow: hidden;
+}
+.spice .mobileTitle img{
+    position: absolute; 
+    right: -70px;
+    bottom: -60px;
+    height: 180%;
+    transition: .3s;
+}
+.spice .mcontent h1{
+    color:#F5DEB3;
+}
+.spice:hover .mobileTitle img{
+    right: -100px;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+    background-size: cover;
+}
+
+
+
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:1080px) and (min-width: 581px){
     .web{
         display: none;
     }
@@ -823,545 +1171,6 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:881px) and (min-width: 781px){
-    .navBar1{
-        height: 5vh;
-        min-height: 50px;
-        max-height: 50px;
-    }
-    .mobile{
-        display: none;
-    }
-    .navBar1 ul li a{
-        font-size: clamp(8px,10px,12px);
-    }
-    #logo{
-        height: 5vh;
-        border-top: 2px  #5C5858 solid; 
-        border-right: 2px  #5C5858 solid; 
-        border-left: 2px  #5C5858 solid; 
-        min-height: 50px;
-        max-height: 50px;
-    }
-    .navBar1 span{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 30%;
-        height:100%;  
-    }
-    .extra{
-        width: 70%;
-    }
-    .navBar1 span h1{
-        font-size: clamp(14px,16px,18px);
-    }
-    .navBar1 span p{
-        font-size: clamp(6px,8px,10px);
-    }
-    .navBar2{
-        height: 4vh;
-        min-height: 40px;
-        max-height: 40px;
-    }
-    .navBar2 a{
-        font-size: clamp(8px,10px,12px);
-    }
-    .navBar2 img{
-        height: 14px;
-    }
-    .navBar2 span:hover #cate::after{
-        opacity:100%;
-        bottom: -50%;
-    }
-    .navBar2 span:hover #cate::before{
-        opacity:100%;
-        top: -50%;
-    }
-    .gridContainer{
-        min-height:500px;
-        display: grid;
-        overflow: hidden;
-        width:95%;
-        margin: 25px auto;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        border-radius: 5px;
-    }
-    .grid1 .grid1Content h1{
-        font-size: clamp(24px,2.5vw,70px);
-    }
-    .grid1 .grid1Content h1 img{
-        height: 60px;
-    }
-    #a a{
-        font-size: 18px;
-    }
-    .grid1:hover .grid1Content #product1{
-        right: 4%;
-    }
-    .grid1:hover .grid1Content #smallpic{
-        height: 60%;
-    }
-    .grid1 ul{
-        width: 80px;
-        bottom:40px;
-        right:22%;
-    }
-    .grid1 ul li{
-        height: 35px;
-        width: 35px;
-    }
-    #left img{
-        height: 8px;
-    }
-    #right img{
-        height: 8px;
-    }
-    .grid2{
-        display: none;
-    }
-    .grid3{
-        display: none;
-    }
-    .title{
-        height: 25vh;
-        min-height: 250px;
-        max-height: 250px;
-    }
-    .title #t{
-        font-size: clamp(20px,1.5vw,30px);
-        top: 6%;
-        left: 3%;
-    }
-    .title #t object{
-        width: clamp(20px,1.5vw,30px);
-    }
-    .productContainer{
-        margin-bottom: 10px;
-    }
-    .category h1{
-        font-size: clamp(12px,14px,16px);
-    }
-    .category p{
-        font-size: clamp(8px,10px,12px);
-    }
-    .category a{
-        padding: 5px;
-        border-radius: 5px;
-        font-size: clamp(6px,8px,10px);
-    }
-    .productitem img{
-        transition: 0.3s;
-        height: 70%;
-    }
-    .productitem:hover img{
-        height: 55%;
-    }
-    .productitem{
-        position: relative;
-        min-width: calc(100%/4);
-        text-align: center;
-        height: 100%;
-        overflow-x: hidden;
-    }
-    .productitem p{
-        position: absolute;
-        bottom: 10%;
-        text-align: center;
-        left:50%;
-        transform: translateX(-50%);
-        font-weight: 500;
-        font-size: clamp(6px,8px,10px);
-    }
-    .products::-webkit-scrollbar{
-        height: 5px;
-    }
-    .spices .category{
-        background-image: url('https://images.unsplash.com/photo-1577574026212-dcc9622e2622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80');
-        background-size: cover;
-        overflow: hidden;
-        color: #F5DEB3;
-    }
-    .spices .category img{
-        position: absolute;
-        bottom: -40px;
-        right:50%;
-        left:50%;
-        transform: translateX(-50%);
-        width: 160%;
-        transition: 0.3s;
-    }
-    .spices .category:hover img{
-        width: 150%;
-    }
-    .cereals .category{
-        background-image: url('https://images.pexels.com/photos/4224314/pexels-photo-4224314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-        background-repeat: no-repeat;
-        background-size: 150%;
-        transition: 0.5s;
-        color: #E4D00A;
-    }
-    .cereals .category h1{
-        margin-top: 30%;
-    }
-    .cereals .category:hover{
-        background-size: 160%;
-    }
-    .sugar .category{
-        position: relative;
-        overflow: hidden;
-        background-size: cover;
-        color:#FFAA33;
-        background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
-    }
-    .sugar .category img{
-        position: absolute;
-        right:50%;
-        left:50%;
-        transform: translateX(-50%);
-        bottom: -50%;
-        width: 110%;
-        transition: 0.3s;
-        
-    }
-    .sugar .category:hover img{
-        width: 105%;
-    }   
-    .oil .category{
-        position: relative;
-        background-size: cover;
-        background-image: url('images/poster5.jpg');
-        color:#7cb215;
-    }  
-    .oil .category img{
-        position: absolute;
-        right:50%;
-        left:50%;
-        transform: translateX(-50%);
-        bottom: 0px;
-        height: 45%;
-        transition: 0.3s;
-    
-    }
-    .oil .category:hover img{
-        height: 40%
-    }
-    
-    .pulse .category{
-        background-image: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-        background-size: cover;
-    }
-    .honey .category{
-        position: relative;
-        background-image: url('https://images.unsplash.com/photo-1517093372760-6f91eb1ac1e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
-        background-size: 100%;
-        transition: 0.3s;
-        color:#FFFF99;
-    }
-    .honey .category:hover{
-        background-size: 110%;
-    }
-    .dry .category{
-        background-image: url('images/dryfruits.jpg');
-        background-size: cover;
-        background-position-y: 100%;
-        color:#934a1c;
-        transition: 0.3s;
-    }
-    .dry .category p{
-        color: black;
-    }
-    .dry .productitem img{
-        height: 60%;
-    }
-    .dry .productitem:hover img{
-        height: 50%;
-    }
-    .dry .category:hover {
-        background-position-y: 80%;
-    }
-    .footer{
-        width: 100%;
-        height: 300px;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-
-
-}
-/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:1080px) and (min-width: 881px){
-    .navBar1{
-        height: 6vh;
-        min-height: 60px;
-        max-height: 60px;
-    }
-    .mobile{
-        display: none;
-    }
-    .navBar1 ul li a{
-        font-size: clamp(10px,12px,14px);
-    }
-    #logo{
-        height: 6vh;
-        border-top: 2px  #5C5858 solid; 
-        border-right: 2px  #5C5858 solid; 
-        border-left: 2px  #5C5858 solid; 
-        min-height: 60px;
-        max-height: 60px;
-    }
-    .navBar1 span{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 30%;
-        height:100%;  
-    }
-    .extra{
-        width: 70%;
-    }
-    .navBar1 span h1{
-        font-size: clamp(14px,16px,18px);
-    }
-    .navBar1 span p{
-        font-size: clamp(6px,8px,10px);
-    }
-    .navBar2{
-        height: 4.5vh;
-        min-height: 45px;
-        max-height: 45px;
-    }
-    #cate{
-        font-size: clamp(10px,12px,14px);
-        font-weight: 500;
-    }
-    .navBar2 img{
-        height: 14px;
-    }
-    .navBar2 span:hover #cate::after{
-        opacity:100%;
-        bottom: -50%;
-    }
-    .navBar2 span:hover #cate::before{
-        opacity:100%;
-        top: -50%;
-    }
-    .gridContainer{
-        min-height:500px;
-        display: grid;
-        overflow: hidden;
-        width:95%;
-        margin: 25px auto;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        border-radius: 5px;
-    }
-    .grid1 .grid1Content h1{
-        font-size: clamp(20px,2.5vw,70px);
-    }
-    .grid1 .grid1Content h1 img{
-        height: 65px;
-    }
-    #a a{
-        font-size: 18px;
-    }
-    .grid1:hover .grid1Content #product1{
-        right: 4%;
-    }
-    .grid1:hover .grid1Content #smallpic{
-        height: 60%;
-    }
-    .grid1 ul{
-        width: 80px;
-        bottom:40px;
-        right:22%;
-    }
-    .grid1 ul li{
-        height: 35px;
-        width: 35px;
-    }
-    #left img{
-        height: 8px;
-    }
-    #right img{
-        height: 8px;
-    }
-    .grid2{
-        display: none;
-    }
-    .grid3{
-        display: none;
-    }
-    .title{
-        height: 30vh;
-        min-height: 300px;
-        max-height: 300px;
-    }
-    .title #t{
-        font-size: clamp(20px,1.5vw,30px);
-        top: 6%;
-        left: 3%;
-    }
-    .title #t object{
-        width: clamp(20px,1.5vw,30px);
-    }
-    .productContainer{
-        margin-bottom: 10px;
-    }
-    .category h1{
-        font-size: clamp(14px,16px,18px);
-    }
-    .category p{
-        font-size: clamp(8px,10px,12px);
-    }
-    .category a{
-        padding: 5px;
-        border-radius: 5px;
-        font-size: clamp(8px,10px,12px);
-    }
-    .products::-webkit-scrollbar{
-        height: 5px;
-    }
-    .productitem{
-        position: relative;
-        min-width: calc(100%/4);
-        text-align: center;
-        height: 100%;
-        overflow-x: hidden;
-    }
-    .productitem img{
-        transition: 0.3s;
-        height: 70%;
-    }
-    .productitem:hover img{
-        height: 55%;
-    }
-    .productitem p{
-        position: absolute;
-        bottom: 10%;
-        text-align: center;
-        left:50%;
-        transform: translateX(-50%);
-        font-weight: 500;
-        font-size: clamp(10px,12px,14px);
-    }
-    .spices .category{
-        background-image: url('https://images.unsplash.com/photo-1577574026212-dcc9622e2622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80');
-        background-size: cover;
-        overflow: hidden;
-        color: #F5DEB3;
-    }
-    .spices .category img{
-        position: absolute;
-        bottom: -60px;
-        right:50%;
-        left:50%;
-        transform: translateX(-50%);
-        width: 160%;
-        transition: 0.3s;
-    }
-    .spices .category:hover img{
-        width: 150%;
-    }
-    .cereals .category{
-        background-image: url('https://images.pexels.com/photos/4224314/pexels-photo-4224314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-        background-repeat: no-repeat;
-        background-size: 150%;
-        transition: 0.5s;
-        color: #E4D00A;
-    }
-    .cereals .category h1{
-        margin-top: 30%;
-    }
-    .cereals .category:hover{
-        background-size: 160%;
-    }
-    .sugar .category{
-        position: relative;
-        overflow: hidden;
-        background-size: cover;
-        color:#FFAA33;
-        background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
-    }
-    .sugar .category img{
-        position: absolute;
-        right:50%;
-        left:50%;
-        transform: translateX(-50%);
-        bottom: -50%;
-        width: 110%;
-        transition: 0.3s;
-        
-    }
-    .sugar .category:hover img{
-        width: 105%;
-    }   
-    .oil .category{
-        position: relative;
-        background-size: cover;
-        background-image: url('images/poster5.jpg');
-        color:#7cb215;
-    }  
-    .oil .category img{
-        position: absolute;
-        right:50%;
-        left:50%;
-        transform: translateX(-50%);
-        bottom: 0px;
-        height: 45%;
-        transition: 0.3s;
-    
-    }
-    .oil .category:hover img{
-        height: 40%
-    }
-    
-    .pulse .category{
-        background-image: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-        background-size: cover;
-    }
-    .honey .category{
-        position: relative;
-        background-image: url('https://images.unsplash.com/photo-1517093372760-6f91eb1ac1e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
-        background-size: 100%;
-        transition: 0.3s;
-        color:#FFFF99;
-    }
-    .honey .category:hover{
-        background-size: 110%;
-    }
-    .dry .category{
-        background-image: url('images/dryfruits.jpg');
-        background-size: cover;
-        background-position-y: 100%;
-        color:#934a1c;
-        transition: 0.3s;
-    }
-    .dry .category p{
-        color: black;
-    }
-    .dry .productitem img{
-        height: 60%;
-    }
-    .dry .productitem:hover img{
-        height: 50%;
-    }
-    .dry .category:hover {
-        background-position-y: 80%;
-    }
-    .footer{
-        width: 100%;
-        height: 300px;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-
-}
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1369,9 +1178,9 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width:1299px) and (min-width: 1081px){
     .navBar1{
-        height: 7vh;
-        min-height: 70px;
-        max-height: 70px;
+        height: 6.5vh;
+        min-height: 65px;
+        max-height: 65px;
     }
     .mobile{
         display: none;
@@ -1380,12 +1189,12 @@ a{
         font-size: clamp(10px,12px,14px);
     }
     #logo{
-        height: 7vh;
-        border-top: 3px  #5C5858 solid; 
-        border-right: 3px  #5C5858 solid; 
-        border-left: 3px  #5C5858 solid; 
-        min-height: 70px;
-        max-height: 70px;
+        height: 6.5vh;
+    min-height: 65px;
+    max-height: 65px;
+        border-top: 5px  #5C5858 solid; 
+        border-right: 5px  #5C5858 solid; 
+        border-left: 5px  #5C5858 solid; 
     }
     .navBar1 span{
         display: flex;
@@ -1393,9 +1202,6 @@ a{
         justify-content: center;
         width: 30%;
         height:100%;  
-    }
-    .extra{
-        width: 70%;
     }
     .navBar1 span h1{
         font-size: clamp(16px,18px,20px);
@@ -1423,7 +1229,9 @@ a{
         top: -50%;
     }
     .gridContainer{
-        min-height:500px;
+        min-height:550px;
+        grid-template-columns: 100%;
+        grid-template-rows: 50 50%;
     }
     .grid1 .grid1Content h1{
         font-size: clamp(20px,2.5vw,70px);
@@ -1453,31 +1261,16 @@ a{
     #right img{
         height: 10px;
     }
-    .grid2 .grid2Content p{
-        font-size: clamp(14px,16px,18px);
+    .grid2 {
+        display: none;
     }
-    .grid2 .grid2Content h1{
-        font-size: clamp(12px,16px,20px);
-    }
-    
-    .grid2Content a{
-        transition: 0.3s;
-        font-size: clamp(10px,12px,14px);
-        font-weight: 600;
-    }
-    .grid3:hover img{ 
-        width: 43%;
-    }
-    .grid3 h1{
-        font-size: clamp(14px,16px,18px);
-    }
-    .grid3 p{
-        font-size: clamp(12px,14px,16px);
+    .grid3 {
+        display: none;
     }
     .title{
-        height: 35vh;
-        min-height: 350px;
-        max-height: 350px;
+        height: 40vh;
+        max-height: 400px;
+        min-height: 400px;
     }
     .title #t{
         font-size: clamp(20px,1.5vw,30px);
@@ -1488,40 +1281,45 @@ a{
         width: clamp(20px,1.5vw,30px);
     }
     .category h1{
-        font-size: clamp(16px,20px,22px);
+        font-size: clamp(18px,22px,24px);
     }
     .category p{
-        font-size: clamp(14px,16px,18px);
-    }
-    .category a{
-        padding: 8px;
-        font-size: clamp(12px,14px,16px);
-    }
-    .products::-webkit-scrollbar{
-        height: 5px;
+        font-size: clamp(16px,18px,20px);
     }
     .productitem{
         position: relative;
         min-width: calc(100%/4);
         text-align: center;
         height: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .productitem img{
         transition: 0.3s;
-        height: 70%;
-    }
-    .productitem:hover img{
-        height: 65%;
+        height: 60%;
     }
     .productitem p{
-        position: absolute;
-        bottom: 10%;
         text-align: center;
         left:50%;
-        transform: translateX(-50%);
         font-weight: 500;
-        font-size: clamp(10px,12px,14px);
+        font-size: clamp(14px,16px,18px);
+        margin: 10px;
+    }
+
+    #buy{
+        font-weight: 700;
+    }
+    #buy::before{
+        display: block;
+        content: '';
+        width: 0;
+        height: 1px;
+        opacity: 50%;
+        background-color: black;
+        margin: 6px auto;
+        transition: .3s;
+    }   
+    .productitem:hover #buy::before{
+        width: 50%;
     }
     .spices .category{
         background-image: url('https://images.unsplash.com/photo-1577574026212-dcc9622e2622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80');
@@ -1535,11 +1333,15 @@ a{
         right:50%;
         left:50%;
         transform: translateX(-50%);
-        width: 160%;
+        width: 140%;
         transition: 0.3s;
     }
     .spices .category:hover img{
-        width: 150%;
+        width: 130%;
+    }
+    
+    .spices .productitem:hover #buy a{
+        color: #C0392B;
     }
     .cereals .category{
         background-image: url('https://images.pexels.com/photos/4224314/pexels-photo-4224314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -1553,6 +1355,10 @@ a{
     }
     .cereals .category:hover{
         background-size: 160%;
+    }
+   
+    .cereals .productitem:hover #buy a{
+        color: #D4AC0D;
     }
     .sugar .category{
         position: relative;
@@ -1573,7 +1379,11 @@ a{
     }
     .sugar .category:hover img{
         width: 105%;
-    }   
+    } 
+   
+    .sugar .productitem:hover #buy a{
+        color: #D35400;
+    }
     .oil .category{
         position: relative;
         background-size: cover;
@@ -1586,18 +1396,18 @@ a{
         left:50%;
         transform: translateX(-50%);
         bottom: 0px;
-        height: 45%;
+        height: 40%;
         transition: 0.3s;
     
     }
     .oil .category:hover img{
-        height: 40%
+        height: 35%
     }
+   
+    .oil .productitem:hover #buy a{
+        color: #1D8348;
+    } 
     
-    .pulse .category{
-        background-image: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-        background-size: cover;
-    }
     .honey .category{
         position: relative;
         background-image: url('https://images.unsplash.com/photo-1517093372760-6f91eb1ac1e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
@@ -1607,6 +1417,10 @@ a{
     }
     .honey .category:hover{
         background-size: 110%;
+    }
+    
+    .honey .productitem:hover #buy a{
+        color: #D4AC0D;
     }
     .dry .category{
         background-image: url('images/dryfruits.jpg');
@@ -1618,14 +1432,12 @@ a{
     .dry .category p{
         color: black;
     }
-    .dry .productitem img{
-        height: 60%;
-    }
-    .dry .productitem:hover img{
-        height: 50%;
-    }
     .dry .category:hover {
         background-position-y: 80%;
+    }
+    
+    .dry .productitem:hover #buy a{
+        color: #8B4000;
     }
     .footer{
         width: 100%;
@@ -1643,23 +1455,23 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width:1429px) and (min-width: 1300px){
     .navBar1{
-        height: 8vh;
-        min-height: 80px;
-        max-height: 80px;
+        height: 6.5vh;
+        min-height: 65px;
+        max-height: 65px;
     }
     .navBar1 ul li a{
-        font-size: 16px;
+        font-size: clamp(11.5px,13.5px,15.5px);
     }
     .mobile{
         display: none;
     }
     #logo{
-        height: 8vh;
-        border-top: 4px  #5C5858 solid; 
-        border-right: 4px  #5C5858 solid; 
-        border-left: 4px  #5C5858 solid; 
-        min-height: 80px;
-        max-height: 80px;
+        height: 6.5vh;
+        min-height: 65px;
+        max-height: 65px;
+        border-top: 5px  #5C5858 solid; 
+        border-right: 5px  #5C5858 solid; 
+        border-left: 5px  #5C5858 solid; 
     }
     .navBar1 span{
         display: flex;
@@ -1667,9 +1479,6 @@ a{
         justify-content: center;
         width: 30%;
         height:100%;  
-    }
-    .extra{
-        width: 70%;
     }
     .navBar2{
         height: 6vh;
@@ -1724,8 +1533,8 @@ a{
     }
     .title{
         height: 40vh;
-        min-height: 400px;
         max-height: 400px;
+        min-height: 400px;
     }
     .title #t{
         font-size: clamp(20px,1.5vw,30px);
@@ -1736,33 +1545,45 @@ a{
         width: clamp(20px,1.5vw,30px);
     }
     .category h1{
-        font-size: clamp(16px,20px,22px);
+        font-size: clamp(18px,22px,24px);
     }
     .category p{
-        font-size: clamp(14px,16px,18px);
+        font-size: clamp(16px,18px,20px);
     }
     .productitem{
         position: relative;
         min-width: calc(100%/4);
         text-align: center;
         height: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .productitem img{
         transition: 0.3s;
-        height: 73%;
-    }
-    .productitem:hover img{
-        height: 65%;
+        height: 60%;
     }
     .productitem p{
-        position: absolute;
-        bottom: 10%;
         text-align: center;
         left:50%;
-        transform: translateX(-50%);
         font-weight: 500;
-        font-size: clamp(12px,14px,16px);
+        font-size: clamp(14px,16px,18px);
+        margin: 10px;
+    }
+
+    #buy{
+        font-weight: 700;
+    }
+    #buy::before{
+        display: block;
+        content: '';
+        width: 0;
+        height: 1px;
+        opacity: 50%;
+        background-color: black;
+        margin: 6px auto;
+        transition: .3s;
+    }   
+    .productitem:hover #buy::before{
+        width: 50%;
     }
     .spices .category{
         background-image: url('https://images.unsplash.com/photo-1577574026212-dcc9622e2622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80');
@@ -1776,11 +1597,15 @@ a{
         right:50%;
         left:50%;
         transform: translateX(-50%);
-        width: 160%;
+        width: 140%;
         transition: 0.3s;
     }
     .spices .category:hover img{
-        width: 150%;
+        width: 130%;
+    }
+    
+    .spices .productitem:hover #buy a{
+        color: #C0392B;
     }
     .cereals .category{
         background-image: url('https://images.pexels.com/photos/4224314/pexels-photo-4224314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -1794,6 +1619,10 @@ a{
     }
     .cereals .category:hover{
         background-size: 160%;
+    }
+   
+    .cereals .productitem:hover #buy a{
+        color: #D4AC0D;
     }
     .sugar .category{
         position: relative;
@@ -1814,7 +1643,11 @@ a{
     }
     .sugar .category:hover img{
         width: 105%;
-    }   
+    } 
+   
+    .sugar .productitem:hover #buy a{
+        color: #D35400;
+    }
     .oil .category{
         position: relative;
         background-size: cover;
@@ -1834,11 +1667,11 @@ a{
     .oil .category:hover img{
         height: 40%
     }
+   
+    .oil .productitem:hover #buy a{
+        color: #1D8348;
+    } 
     
-    .pulse .category{
-        background-image: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-        background-size: cover;
-    }
     .honey .category{
         position: relative;
         background-image: url('https://images.unsplash.com/photo-1517093372760-6f91eb1ac1e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
@@ -1848,6 +1681,10 @@ a{
     }
     .honey .category:hover{
         background-size: 110%;
+    }
+    
+    .honey .productitem:hover #buy a{
+        color: #D4AC0D;
     }
     .dry .category{
         background-image: url('images/dryfruits.jpg');
@@ -1859,14 +1696,12 @@ a{
     .dry .category p{
         color: black;
     }
-    .dry .productitem img{
-        height: 60%;
-    }
-    .dry .productitem:hover img{
-        height: 50%;
-    }
     .dry .category:hover {
         background-position-y: 80%;
+    }
+    
+    .dry .productitem:hover #buy a{
+        color: #8B4000;
     }
     .footer{
         width: 100%;
@@ -1884,28 +1719,28 @@ a{
 @media (max-width:1650px) and (min-width: 1430px)
 {
     .navBar1{
-        height: 10vh;
-        min-height: 100px;
-        max-height: 100px;
+        height: 6.5vh;
+    min-height: 65px;
+    max-height: 65px;
     }
     .navBar1 ul li a{
-        font-size: 16px;
+        font-size: clamp(12px,14px,16px);
     }
     .mobile{
         display: none;
     }
     #logo{
-        height: 10vh;
+        height: 6.5vh;
+        min-height: 65px;
+        max-height: 65px;
         border-top: 5px  #5C5858 solid; 
         border-right: 5px  #5C5858 solid; 
         border-left: 5px  #5C5858 solid; 
-        min-height: 100px;
-        max-height: 100px;
     }
     .navBar2{
-        height: 7vh;
-        min-height: 70px;
-        max-height: 70px;
+        height: 6vh;
+        min-height: 60px;
+        max-height: 60px;
     }
     .navBar2 a{
         font-size: clamp(10px,12px,14px);
@@ -1952,8 +1787,8 @@ a{
     }
     .title{
         height: 45vh;
-        min-height: 450px;
         max-height: 450px;
+        min-height: 450px;
     }
     .title #t{
         font-size: clamp(20px,1.5vw,30px);
@@ -1964,33 +1799,45 @@ a{
         width: clamp(20px,1.5vw,30px);
     }
     .category h1{
-        font-size: clamp(16px,20px,22px);
+        font-size: clamp(18px,22px,24px);
     }
     .category p{
-        font-size: clamp(14px,16px,18px);
+        font-size: clamp(16px,18px,20px);
     }
     .productitem{
         position: relative;
         min-width: calc(100%/4);
         text-align: center;
         height: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .productitem img{
         transition: 0.3s;
-        height: 77%;
-    }
-    .productitem:hover img{
         height: 65%;
     }
     .productitem p{
-        position: absolute;
-        bottom: 10%;
         text-align: center;
         left:50%;
-        transform: translateX(-50%);
         font-weight: 500;
         font-size: clamp(14px,16px,18px);
+        margin: 10px;
+    }
+
+    #buy{
+        font-weight: 700;
+    }
+    #buy::before{
+        display: block;
+        content: '';
+        width: 0;
+        height: 1px;
+        opacity: 50%;
+        background-color: black;
+        margin: 6px auto;
+        transition: .3s;
+    }   
+    .productitem:hover #buy::before{
+        width: 50%;
     }
     .spices .category{
         background-image: url('https://images.unsplash.com/photo-1577574026212-dcc9622e2622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80');
@@ -2004,11 +1851,15 @@ a{
         right:50%;
         left:50%;
         transform: translateX(-50%);
-        width: 160%;
+        width: 140%;
         transition: 0.3s;
     }
     .spices .category:hover img{
-        width: 150%;
+        width: 130%;
+    }
+    
+    .spices .productitem:hover #buy a{
+        color: #C0392B;
     }
     .cereals .category{
         background-image: url('https://images.pexels.com/photos/4224314/pexels-photo-4224314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -2022,6 +1873,10 @@ a{
     }
     .cereals .category:hover{
         background-size: 160%;
+    }
+   
+    .cereals .productitem:hover #buy a{
+        color: #D4AC0D;
     }
     .sugar .category{
         position: relative;
@@ -2042,7 +1897,11 @@ a{
     }
     .sugar .category:hover img{
         width: 105%;
-    }   
+    } 
+   
+    .sugar .productitem:hover #buy a{
+        color: #D35400;
+    }
     .oil .category{
         position: relative;
         background-size: cover;
@@ -2062,11 +1921,11 @@ a{
     .oil .category:hover img{
         height: 40%
     }
+   
+    .oil .productitem:hover #buy a{
+        color: #1D8348;
+    } 
     
-    .pulse .category{
-        background-image: url('https://images.unsplash.com/photo-1533035350251-aa8b8e208d95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
-        background-size: cover;
-    }
     .honey .category{
         position: relative;
         background-image: url('https://images.unsplash.com/photo-1517093372760-6f91eb1ac1e8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80');
@@ -2076,6 +1935,10 @@ a{
     }
     .honey .category:hover{
         background-size: 110%;
+    }
+    
+    .honey .productitem:hover #buy a{
+        color: #D4AC0D;
     }
     .dry .category{
         background-image: url('images/dryfruits.jpg');
@@ -2087,14 +1950,12 @@ a{
     .dry .category p{
         color: black;
     }
-    .dry .productitem img{
-        height: 60%;
-    }
-    .dry .productitem:hover img{
-        height: 50%;
-    }
     .dry .category:hover {
         background-position-y: 80%;
+    }
+    
+    .dry .productitem:hover #buy a{
+        color: #8B4000;
     }
     .footer{
         width: 100%;
@@ -2110,28 +1971,28 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1650px) {
 .navBar1{
-    height: 10vh;
-    min-height: 100px;
-    max-height: 100px;
+    height: 6.5vh;
+    min-height: 65px;
+    max-height: 65px;
 }
 .navBar1 ul li a{
-    font-size: 18px;
+    font-size: clamp(13px,15px,17px);
 }
 .mobile{
     display: none;
 }
 #logo{
-    height: 10vh;
+    height: 6.5vh;
+    min-height: 65px;
+    max-height: 65px;
     border-top: 5px  #5C5858 solid; 
     border-right: 5px  #5C5858 solid; 
     border-left: 5px  #5C5858 solid; 
-    min-height: 100px;
-    max-height: 100px;
 }
 .navBar2{
-    height: 7vh;
-    min-height: 70px;
-    max-height: 70px;
+    height: 6vh;
+    min-height: 60px;
+    max-height: 60px;
 }
 .navBar2 a{
     font-size: clamp(12px,14px,16px);
@@ -2213,53 +2074,7 @@ a{
     font-size: clamp(14px,16px,18px);
     margin: 10px;
 }
-.info{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    top:50%;
-    bottom: 50%;
-    transform: translateY(-50%);
-    height: 25%;
-    right: 0;
-    width: 0;
-    border-radius: 5px;
-    opacity: 0;
-    transition: 0.3s;
-}
-#infop1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    height: 45%;
-    border-radius: 50px 0px 50px 0;
-}
-#infop1 a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#infop2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45%;
-    width: 80%;
-    border-radius: 50px 0px 50px 0;
-}
-.info a{
-    color: white;
-}
-.info img{
-    height: 10px;
-}
-.productitem:hover .info{
-    opacity: 100%;
-    width: 60%;
-}
+
 #buy{
     font-weight: 700;
 }
@@ -2294,12 +2109,7 @@ a{
 .spices .category:hover img{
     width: 130%;
 }
-.spices #infop1{
-    background-color: #424949;
-}
-.spices #infop2{
-    background-color: #424949;
-}
+
 .spices .productitem:hover #buy a{
     color: #C0392B;
 }
@@ -2316,12 +2126,7 @@ a{
 .cereals .category:hover{
     background-size: 160%;
 }
-.cereals #infop1{
-    background-color: #424949;
-}
-.cereals #infop2{
-    background-color: #424949;
-}
+
 .cereals .productitem:hover #buy a{
     color: #D4AC0D;
 }
@@ -2345,12 +2150,7 @@ a{
 .sugar .category:hover img{
     width: 105%;
 } 
-.sugar #infop1{
-    background-color: #424949;
-}
-.sugar #infop2{
-    background-color: #424949;
-} 
+
 .sugar .productitem:hover #buy a{
     color: #D35400;
 }
@@ -2373,12 +2173,7 @@ a{
 .oil .category:hover img{
     height: 40%
 }
-.oil #infop1{
-    background-color: #424949;
-}
-.oil #infop2{
-    background-color: #424949;
-} 
+
 .oil .productitem:hover #buy a{
     color: #1D8348;
 } 
@@ -2393,12 +2188,7 @@ a{
 .honey .category:hover{
     background-size: 110%;
 }
-.honey #infop1{
-    background-color: #424949;
-}
-.honey #infop2{
-    background-color: #424949;
-}  
+ 
 .honey .productitem:hover #buy a{
     color: #D4AC0D;
 }
@@ -2415,12 +2205,7 @@ a{
 .dry .category:hover {
     background-position-y: 80%;
 }
-.dry #infop1{
-    background-color: #424949;
-}
-.dry #infop2{
-    background-color: #424949;
-}  
+
 .dry .productitem:hover #buy a{
     color: #8B4000;
 }
