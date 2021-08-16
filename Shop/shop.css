@@ -262,6 +262,10 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
 #left img{
     transform: rotate(180deg);
 }
+#slogan{
+    font-size: clamp(20px,2.5vw,50px);
+    font-weight: 600;
+}
 .grid2{
     position: relative;
     display: flex;
@@ -365,7 +369,7 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
 .productContainer{
     display: grid;
     margin: 0px auto 30px auto;
-    height: 70%;
+    height: 72.5%;
     width: 95%;
     grid-gap: 6%;
     grid-template-columns: 20% 80%;
@@ -404,12 +408,12 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
     background-color: #fff;
     margin: 10px auto;
     opacity:0;
-    transition: .5s;
+    transition: .3s;
 }
 .category:hover h1::after{
     content: '';
     display: block;
-    width: 50%;
+    width: 70%;
     height: 2px;
     opacity:100%;
     background-color: #fff;
@@ -437,6 +441,9 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
 .oil .products::-webkit-scrollbar{
     height:0;
 }
+#price{
+    font-weight: 600;
+}
 .productitem .productitemOverlay{
     display: none;
     position: absolute;
@@ -450,12 +457,16 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
 .productitem:hover .productitemOverlay{
     opacity: 30%;
 }
+.mobile .mproductcontainer::-webkit-scrollbar{
+    height: 0;
+}
+
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:580px) and (min-width: 485px){
+@media (max-width:600px) and (min-width: 500px){
 .web{
     display: none;
 }
@@ -535,7 +546,7 @@ font-weight: 700;
     font-size: clamp(12px,14px,16px);
 }
 .gridContainer{
-    min-height:400px;
+    min-height:300px;
     display: grid;
     overflow: hidden;
     width:95%;
@@ -544,7 +555,7 @@ font-weight: 700;
     grid-template-rows: 100%;
     border-radius: 5px;
 }
-.grid1 .grid1Content h1{
+.grid1 .grid1Content #grid1_title{
     margin-top: 10%;
     left: 10%;
     position:relative;
@@ -555,11 +566,12 @@ font-weight: 700;
     margin-top:5px;
     left: 10%;
     color:#C11B17;
+    font-size: clamp(10px,12px, 14px);
     position:relative;
 }
 .grid1 .grid1Content #a{
     position: relative;
-    font-size: 25px;
+    font-size: 2px;
     margin-top: 30px;
     font-weight: 500;  
 }
@@ -570,7 +582,7 @@ font-weight: 700;
     height: 40px;
 }
 #a a{
-    font-size: 16px;
+    font-size: clamp(12px, 14px, 16px);
 }
 #smallpic{
     height: 80%;
@@ -590,18 +602,18 @@ font-weight: 700;
 }
 .grid1 ul{
     width: 60px;
-    bottom:40px;
-    right:22%;
+    bottom:8%;
+    right:18%;
 }
 .grid1 ul li{
     height: 25px;
     width: 25px;
 }
 #left img{
-    height: 8px;
+    height: 6px;
 }
 #right img{
-    height: 8px;
+    height: 6px;
 }
 .grid2{
     display: none;
@@ -611,9 +623,9 @@ font-weight: 700;
 }
 .mcategory{
     display: block;
-    height: 40vh;
-    min-height: 400px;
-    max-height: 400px;
+    height: 35vh;
+    min-height: 375px;
+    max-height: 375px;
     width: 95%;
     margin: 25px auto;
     border-radius: 3px;
@@ -622,8 +634,8 @@ font-weight: 700;
 .mobileTitle{
     top: 15px;
     height: 8vh;
-    min-height: 80px;
-    max-height: 80px;
+    min-height: 25%;
+    max-height: 25%;
     width: 95%;
     margin: 0px auto;
     border-radius: 3px;
@@ -647,24 +659,23 @@ font-weight: 700;
 }
 .mcontent{
     position: absolute;
-    top: 18%;
-    bottom: 80%;
-    left: 15%;
+    top: 28%;
+    left: 20%;
     text-align: center;
     transition: 0.3s;
 }
 .mcontent h1{
-    font-size: clamp(18px,20px,22px);
+    font-size: clamp(15px,17px,19px);
 }
 .mcontent p{
-    font-size: clamp(14px,16px,18px);
+    font-size: clamp(13px,15px,17px);
     color: white;
 }
 .mcontent::after{
     display: block;
     position:absolute;
-    top: -5px;
-    right: -20px;
+    top: -25%;
+    right: -20%;
     content: '';
     background-color: white;
     height: 60px;
@@ -674,26 +685,26 @@ font-weight: 700;
 }
 .mcateshop p{
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: white;
-    padding: 10px;
+    padding: 7px;
     position: absolute;
-    left:240px;
-    top:31%;
+    left:45%;
+    top:32%;
     opacity: 0;
     transition: 0.3s;
     cursor: pointer;
 }
 .mcateshop p a{
-    font-size: clamp(10px,12px,14px);
+    font-size: clamp(12px,14px,16px);
 }
-.mcategory:hover .mcontent{
+.mobileTitle:hover .mcontent{
     left: 5%;
 }
-.mcategory:hover .mcontent::after{
+.mobileTitle:hover .mcontent::after{
     opacity: 100%;
 }
-.mcategory:hover .mcateshop p{
+.mobileTitle:hover .mcateshop p{
     opacity: 100%;
 }
 
@@ -713,6 +724,7 @@ font-weight: 700;
     text-align: center;
     height: 100%;
     width: 0px;
+    font-size: clamp(10px,12px,14px);
     min-width: calc(100%/3);
     max-width: calc(100%/3);
     margin-right:10px;
@@ -733,7 +745,7 @@ font-weight: 700;
     height: 260%;
     transition:.3s;
 }
-.sugar:hover .mobileTitle img{
+.sugar_:hover img{
     right: -50px;
 }
 .sugar h1{
@@ -747,17 +759,16 @@ font-weight: 700;
 }
 .cereal .mobileTitle img{
     position: absolute;
-    right: -120px;
+    right: -10%;
     top: -15px;
-    height: 200%;
+    height: 180%;
     transition:.3s;
 }
-.cereal:hover .mobileTitle img{
-    right: -150px;
+.cereal_:hover img{
+    right: -25%;
 }
 .cereal h1{
     color:#E4D00A;
-    font-size: clamp(20px,22px,24px);
 }
 .cereal .mcontent p{
     color:white;
@@ -787,16 +798,36 @@ font-weight: 700;
 }
 .spice .mobileTitle img{
     position: absolute; 
-    right: -70px;
+    right: -10%;
     bottom: -60px;
-    height: 180%;
+    height: 170%;
     transition: .3s;
 }
 .spice .mcontent h1{
-    color:#F5DEB3;
+    color:#FF4500;
 }
-.spice:hover .mobileTitle img{
-    right: -100px;
+.spice_:hover img{
+    right: -20%;
+}
+.dry .mobileTitle{
+    background-image: url('images/poster8.jpg');
+    overflow: hidden;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dry .mobileTitle img{
+    position: absolute;
+    right: -3%;
+    top: 0%;
+    height: 160%;
+    transition:.3s;
+}
+.dry_:hover img{
+    right: -18%;
+}
+.dry h1{
+    color:#FCEDCE;
 }
 .footer{
     width: 100%;
@@ -804,16 +835,14 @@ font-weight: 700;
     background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
     background-size: cover;
 }
-
-
-
 }
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:1080px) and (min-width: 581px){
+
+@media (max-width:750px) and (min-width: 601px){
     .web{
         display: none;
     }
@@ -857,26 +886,26 @@ font-weight: 700;
     }
     .navelement2 h1{
         display: inline-block;
-    background: #FC466B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: clamp(18px,20px,22px);
-    align-self: flex-end;
+        background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: clamp(18px,20px,22px);
+        align-self: flex-end;
     }
     .navelement2 p{
         display: inline-block;
         align-self: flex-start;
-    background: #FC466B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: clamp(8px,10px,12px);
-    font-weight: 700;
+        background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: clamp(8px,10px,12px);
+        font-weight: 700;
     }
     .mobilenav2{
         margin: 0 auto;
@@ -902,33 +931,31 @@ font-weight: 700;
         grid-template-rows: 100%;
         border-radius: 5px;
     }
-    .grid1 .grid1Content h1{
-        margin-top: 10%;
-        left: 10%;
-        position:relative;
+    .grid1 .grid1Content #grid1_title {
+        margin-top: 8%;
+        left: 15%;
+        position: relative;
         color: #641E16;
         font-weight: 400;
     }
     .grid1 .grid1Content p{
         margin-top:5px;
-        left: 10%;
+        left: 15%;
         color:#C11B17;
         position:relative;
+        font-size: clamp(10px, 12px, 18px);
     }
     .grid1 .grid1Content #a{
-        position: relative;
-        font-size: 25px;
-        margin-top: 30px;
-        font-weight: 500;  
+        font-size: clamp(12px, 14px, 16px);
+    }
+    .grid1 .grid1Content #a img{
+        height: 10px;
     }
     .grid1 .grid1Content h1{
         font-size: clamp(24px,2.5vw,70px);
     }
     .grid1 .grid1Content h1 img{
-        height: 40px;
-    }
-    #a a{
-        font-size: 16px;
+        height: 50px;
     }
     #smallpic{
         height: 80%;
@@ -937,29 +964,34 @@ font-weight: 700;
         right: 4%;
     }
     .grid1 .grid1Content #smallpic{
-        height: 60%;
+        height: 55%;
         position: absolute;
         bottom: -100px;
         left: -100px;
         transition: 0.3s;
     }
     .grid1:hover .grid1Content #smallpic{
-        height: 70%;
+        height: 65%;
     }
     .grid1 ul{
-        width: 60px;
-        bottom:40px;
-        right:22%;
+        width: 70px;
+        bottom:35px;
+        right: 18%;
     }
     .grid1 ul li{
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
+        
     }
     #left img{
         height: 8px;
     }
     #right img{
         height: 8px;
+    }
+    #slogan{
+        font-size: clamp(20px, 2vw, 50px);
+        font-weight: 600;
     }
     .grid2{
         display: none;
@@ -969,9 +1001,10 @@ font-weight: 700;
     }
     .mcategory{
         display: block;
-        height: 45vh;
-        min-height: 450px;
-        max-height: 450px;
+        position: relative;
+        height: 40vh;
+        min-height: 425px;
+        max-height: 425px;
         width: 95%;
         margin: 25px auto;
         border-radius: 3px;
@@ -1005,14 +1038,14 @@ font-weight: 700;
     }
     .mcontent{
         position: absolute;
-        top: 20%;
+        top: 22%;
         bottom: 80%;
-        left: 15%;
+        left: 25%;
         text-align: center;
         transition: 0.3s;
     }
     .mcontent h1{
-        font-size: clamp(20px,22px,24px);
+        font-size: clamp(18px,20px,22px);
     }
     .mcontent p{
         font-size: clamp(16px,18px,20px);
@@ -1021,8 +1054,8 @@ font-weight: 700;
     .mcontent::after{
         display: block;
         position:absolute;
-        top: -5px;
-        right: -20px;
+        top: -8px;
+        right: -20%;
         content: '';
         background-color: white;
         height: 70px;
@@ -1036,22 +1069,23 @@ font-weight: 700;
         background-color: white;
         padding: 10px;
         position: absolute;
-        left:240px;
+        left:45%;
         top:31%;
         opacity: 0;
         transition: 0.3s;
         cursor: pointer;
     }
     .mcateshop p a{
+        padding: 4px;
         font-size: clamp(12px,14px,16px);
     }
-    .mcategory:hover .mcontent{
+    .mobileTitle:hover .mcontent{
         left: 5%;
     }
-    .mcategory:hover .mcontent::after{
+    .mobileTitle:hover .mcontent::after{
         opacity: 100%;
     }
-    .mcategory:hover .mcateshop p{
+    .mobileTitle:hover .mcateshop p{
         opacity: 100%;
     }
     
@@ -1061,7 +1095,7 @@ font-weight: 700;
         transform: translate(0%,-70%);
         margin: 0 auto;
         position: relative;
-        height: 255px;
+        height: 58%;
         width: 95%;
         display: flex;
         overflow-x:auto; 
@@ -1086,13 +1120,395 @@ font-weight: 700;
     }
     .sugar .mobileTitle img{
         position: absolute;
-        right: -20px;
-        top: 0px;
+        right: 0;
+        top: -6%;
         height: 260%;
         transition:.3s;
     }
-    .sugar:hover .mobileTitle img{
-        right: -50px;
+    .sugar_:hover img{
+        right: -5%;
+    }
+    .sugar h1{
+        color:#FFAA33;
+    }
+    
+    .cereal .mobileTitle{
+        background-image: url('images/cerealbg.jpg');
+        overflow: hidden;
+        position: relative;
+    }
+    .cereal .mobileTitle img{
+        position: absolute;
+        right: -12%;
+        top: -15px;
+        height: 180%;
+        transition:.3s;
+    }
+    .cereal_:hover img{
+        right: -20%;
+    }
+    .cereal h1{
+        color:#E4D00A;
+    }
+    .cereal .mcontent p{
+        color:white;
+    }
+    .oil .mobileTitle{
+        position: relative;
+        background-image: url('images/poster5.jpg');
+        overflow: hidden;
+    }
+    .oil .mobileTitle img{
+        position: absolute; 
+        right: 0;
+        bottom: 0;
+        height: 90%;
+
+    }
+    .oil .mcontent h1{
+        color:#7cb215;
+    }
+    .oil .mproductcontainer{
+        overflow: hidden;
+    }
+    .spice .mobileTitle{
+        position: relative;
+        background-image: url('images/spicebg.jpg');
+        overflow: hidden;
+    }
+    .spice .mobileTitle img{
+        position: absolute; 
+        right: -10%;
+        bottom: -60px;
+        height: 170%;
+        transition: .3s;
+    }
+    .spice .mcontent h1{
+        color:#FF4500;
+    }
+    .spice_:hover img{
+        right: -100px;
+    }
+    .dry .mobileTitle{
+        background-image: url('images/poster8.jpg');
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .dry .mobileTitle img{
+        position: absolute;
+        right: -5%;
+        top: 0%;
+        height: 160%;
+        transition:.3s;
+    }
+    .dry_:hover img{
+        right: -15%;
+    }
+    .dry h1{
+        color:#FCEDCE;
+    }
+    .footer{
+        width: 100%;
+        height: 300px;
+        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+        background-size: cover;
+    }
+
+
+    
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:890px) and (min-width: 751px){
+    .web{
+        display: none;
+    }
+    .mobilenav1{
+        display: flex;
+        width: 100%;
+        max-height: 60px;
+        height: 60px;
+        min-height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .navelement1{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        height: 100%;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50px;
+        height:100%
+    }
+    #Mlogo{
+        height: 100%;   
+    }
+    .navelement2{
+        width: 40%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 60% 40%;
+        align-items: center;
+    }
+    .navelement2 img{
+        grid-row: span 2;
+        height: 90%;
+    }
+    .navelement2 h1{
+        display: inline-block;
+        background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: clamp(18px,20px,22px);
+        align-self: flex-end;
+    }
+    .navelement2 p{
+        display: inline-block;
+        align-self: flex-start;
+        background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: clamp(8px,10px,12px);
+        font-weight: 700;
+    }
+    .mobilenav2{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        color:white;
+        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+        background-size: cover;
+    }
+    .mobilenav2 h1{
+        font-size: clamp(12px,14px,16px);
+    }
+    .gridContainer{
+        min-height:400px;
+        display: grid;
+        overflow: hidden;
+        width:95%;
+        margin: 25px auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        border-radius: 5px;
+    }
+    .grid1 .grid1Content #grid1_title {
+        margin-top: 8%;
+        left: 15%;
+        position: relative;
+        color: #641E16;
+        font-weight: 400;
+    }
+    .grid1 .grid1Content p{
+        margin-top:5px;
+        left: 15%;
+        color:#C11B17;
+        position:relative;
+        font-size: clamp(10px, 12px, 18px);
+    }
+    .grid1 .grid1Content #a{
+        font-size: clamp(12px, 14px, 16px);
+    }
+    .grid1 .grid1Content #a img{
+        height: 10px;
+    }
+    .grid1 .grid1Content h1{
+        font-size: clamp(24px,2.5vw,70px);
+    }
+    .grid1 .grid1Content h1 img{
+        height: 50px;
+    }
+    #smallpic{
+        height: 80%;
+    }
+    .grid1:hover .grid1Content #product1{
+        right: 4%;
+    }
+    .grid1 .grid1Content #smallpic{
+        height: 55%;
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        transition: 0.3s;
+    }
+    .grid1:hover .grid1Content #smallpic{
+        height: 65%;
+    }
+    .grid1 ul{
+        width: 70px;
+        bottom:35px;
+        right: 16%;
+    }
+    .grid1 ul li{
+        height: 30px;
+        width: 30px;
+        
+    }
+    #left img{
+        height: 8px;
+    }
+    #right img{
+        height: 8px;
+    }
+    #slogan{
+        font-size: clamp(20px, 2vw, 50px);
+        font-weight: 600;
+    }
+    .grid2{
+        display: none;
+    }
+    .grid3{
+        display: none;
+    }
+    .mcategory{
+        display: block;
+        position: relative;
+        height: 45vh;
+        min-height: 425px;
+        max-height: 425px;
+        width: 95%;
+        margin: 25px auto;
+        border-radius: 3px;
+        background-color: white;
+    }
+    .mobileTitle{
+        top: 15px;
+        height: 10vh;
+        min-height: 100px;
+        max-height: 100px;
+        width: 95%;
+        margin: 0px auto;
+        border-radius: 3px;
+    }
+    .mcatename{
+        width: 95%;
+        position: relative;
+        font-size: clamp(22px, 24px, 26px);
+        font-weight: 500;
+        margin: 10px auto;
+        top: 10px;
+    }
+    .mcatename::after{
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        margin: 10px auto;
+        opacity: 30%;
+        background-color: black;
+    }
+    .mcontent{
+        position: absolute;
+        top: 22%;
+        bottom: 80%;
+        left: 25%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .mcontent h1{
+        font-size: clamp(20px,22px,24px);
+    }
+    .mcontent p{
+        font-size: clamp(18px,20px,22px);
+        color: white;
+    }
+    .mcontent::after{
+        display: block;
+        position:absolute;
+        top: -8px;
+        right: -25%;
+        content: '';
+        background-color: white;
+        height: 70px;
+        width: 2px;
+        opacity: 0%;
+        transition: 0.5s;
+    }
+    .mcateshop p{
+        display: inline-block;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+        position: absolute;
+        left:45%;
+        top:31%;
+        opacity: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .mcateshop p a{
+        padding: 5px;
+        font-size: clamp(14px,16px,18px);
+    }
+    .mobileTitle:hover .mcontent{
+        left: 5%;
+    }
+    .mobileTitle:hover .mcontent::after{
+        opacity: 100%;
+    }
+    .mobileTitle:hover .mcateshop p{
+        opacity: 100%;
+    }
+    
+    .mproductcontainer{
+        top:50%;
+        bottom: 50%;
+        transform: translate(0%,-70%);
+        margin: 0 auto;
+        position: relative;
+        height: 58%;
+        width: 95%;
+        display: flex;
+        overflow-x:auto; 
+    }
+    .mproduct{
+        display: block;
+        text-align: center;
+        height: 100%;
+        width: 0px;
+        min-width: calc(100%/4);
+        max-width: calc(100%/4);
+        margin-right:10px;
+        overflow-x: hidden;
+    }
+    .mproduct img{
+        height: 70%;
+    }
+    .sugar .mobileTitle{
+        background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+        overflow: hidden;
+        position: relative;
+    }
+    .sugar .mobileTitle img{
+        position: absolute;
+        right: 0;
+        top: -6%;
+        height: 300%;
+        transition:.3s;
+    }
+    .sugar_:hover img{
+        right: -5%;
     }
     .sugar h1{
         color:#FFAA33;
@@ -1110,12 +1526,11 @@ font-weight: 700;
         height: 200%;
         transition:.3s;
     }
-    .cereal:hover .mobileTitle img{
+    .cereal_:hover img{
         right: -150px;
     }
     .cereal h1{
         color:#E4D00A;
-        font-size: clamp(20px,22px,24px);
     }
     .cereal .mcontent p{
         color:white;
@@ -1151,10 +1566,30 @@ font-weight: 700;
         transition: .3s;
     }
     .spice .mcontent h1{
-        color:#F5DEB3;
+        color:#FF4500;
     }
-    .spice:hover .mobileTitle img{
+    .spice_:hover img{
         right: -100px;
+    }
+    .dry .mobileTitle{
+        background-image: url('images/poster8.jpg');
+        overflow: hidden;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .dry .mobileTitle img{
+        position: absolute;
+        right: -3%;
+        top: 0%;
+        height: 180%;
+        transition:.3s;
+    }
+    .dry_:hover img{
+        right: -5%;
+    }
+    .dry h1{
+        color:#FCEDCE;
     }
     .footer{
         width: 100%;
@@ -1163,6 +1598,386 @@ font-weight: 700;
         background-size: cover;
     }
 
+
+    
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:1080px) and (min-width: 891px){
+    .web{
+        display: none;
+    }
+    .mobilenav1{
+        display: flex;
+        width: 100%;
+        max-height: 60px;
+        height: 60px;
+        min-height: 60px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .navelement1{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        height: 100%;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50px;
+        height:100%
+    }
+    #Mlogo{
+        height: 100%;   
+    }
+    .navelement2{
+        width: 40%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 60% 40%;
+        align-items: center;
+    }
+    .navelement2 img{
+        grid-row: span 2;
+        height: 90%;
+    }
+    .navelement2 h1{
+        display: inline-block;
+        background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: clamp(18px,20px,22px);
+        align-self: flex-end;
+    }
+    .navelement2 p{
+        display: inline-block;
+        align-self: flex-start;
+        background: #FC466B;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: clamp(8px,10px,12px);
+        font-weight: 700;
+    }
+    .mobilenav2{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        color:white;
+        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+        background-size: cover;
+    }
+    .mobilenav2 h1{
+        font-size: clamp(12px,14px,16px);
+    }
+    .gridContainer{
+        min-height:500px;
+        display: grid;
+        overflow: hidden;
+        width:95%;
+        margin: 25px auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        border-radius: 5px;
+    }
+    .grid1 .grid1Content #grid1_title {
+        margin-top: 8%;
+        left: 15%;
+        position: relative;
+        color: #641E16;
+        font-weight: 400;
+    }
+    .grid1 .grid1Content p{
+        margin-top:5px;
+        left: 15%;
+        color:#C11B17;
+        position:relative;
+    }
+    .grid1 .grid1Content #a{
+        font-size: clamp(16px, 18px, 20px);
+    }
+    .grid1 .grid1Content #a img{
+        height: 10px;
+    }
+    .grid1 .grid1Content h1{
+        font-size: clamp(24px,3.5vw,70px);
+    }
+    .grid1 .grid1Content h1 img{
+        height: 70px;
+    }
+    #smallpic{
+        height: 80%;
+    }
+    .grid1:hover .grid1Content #product1{
+        right: 4%;
+    }
+    .grid1 .grid1Content #smallpic{
+        height: 55%;
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        transition: 0.3s;
+    }
+    .grid1:hover .grid1Content #smallpic{
+        height: 65%;
+    }
+    .grid1 ul{
+        width: 80px;
+        bottom:40px;
+        right: 16%;
+    }
+    .grid1 ul li{
+        height: 35px;
+        width: 35px;
+        
+    }
+    #left img{
+        height: 8px;
+    }
+    #right img{
+        height: 8px;
+    }
+    #slogan{
+        font-size: clamp(20px, 3vw, 50px);
+        font-weight: 600;
+    }
+    .grid2{
+        display: none;
+    }
+    .grid3{
+        display: none;
+    }
+    .mcategory{
+        display: block;
+        position: relative;
+        height: 50vh;
+        min-height: 500px;
+        max-height: 500px;
+        width: 95%;
+        margin: 25px auto;
+        border-radius: 3px;
+        background-color: white;
+    }
+    .mobileTitle{
+        top: 15px;
+        height: 10vh;
+        min-height: 120px;
+        max-height: 120px;
+        width: 95%;
+        margin: 0px auto;
+        border-radius: 3px;
+    }
+    .mcatename{
+        width: 95%;
+        position: relative;
+        font-size: clamp(26px, 28px, 30px);
+        font-weight: 500;
+        margin: 10px auto;
+        top: 10px;
+    }
+    .mcatename::after{
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        margin: 10px auto;
+        opacity: 30%;
+        background-color: black;
+    }
+    .mcontent{
+        position: absolute;
+        top: 20%;
+        bottom: 80%;
+        left: 25%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .mcontent h1{
+        font-size: clamp(24px,26px,28px);
+    }
+    .mcontent p{
+        font-size: clamp(20px,22px,24px);
+        color: white;
+    }
+    .mcontent::after{
+        display: block;
+        position:absolute;
+        top: 0px;
+        right: -40%;
+        content: '';
+        background-color: white;
+        height: 70px;
+        width: 2px;
+        opacity: 0%;
+        transition: 0.5s;
+    }
+    .mcateshop p{
+        display: inline-block;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+        position: absolute;
+        left:45%;
+        top:31%;
+        opacity: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .mcateshop p a{
+        font-size: clamp(16px,18px,20px);
+    }
+    .mobileTitle:hover .mcontent{
+        left: 5%;
+    }
+    .mobileTitle:hover .mcontent::after{
+        opacity: 100%;
+    }
+    .mobileTitle:hover .mcateshop p{
+        opacity: 100%;
+    }
+    
+    .mproductcontainer{
+        top:50%;
+        bottom: 50%;
+        transform: translate(0%,-70%);
+        margin: 0 auto;
+        position: relative;
+        height: 58%;
+        width: 95%;
+        display: flex;
+        overflow-x:auto; 
+    }
+    .mproduct{
+        display: block;
+        text-align: center;
+        height: 100%;
+        width: 0px;
+        min-width: calc(100%/4);
+        max-width: calc(100%/4);
+        margin-right:10px;
+        overflow-x: hidden;
+    }
+    .mproduct img{
+        height: 70%;
+    }
+    .sugar .mobileTitle{
+        background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+        overflow: hidden;
+        position: relative;
+    }
+    .sugar .mobileTitle img{
+        position: absolute;
+        right: 0;
+        top: -6%;
+        height: 300%;
+        transition:.3s;
+    }
+    .sugar_:hover img{
+        right: -5%;
+    }
+    .sugar h1{
+        color:#FFAA33;
+    }
+    
+    .cereal .mobileTitle{
+        background-image: url('images/cerealbg.jpg');
+        overflow: hidden;
+        position: relative;
+    }
+    .cereal .mobileTitle img{
+        position: absolute;
+        right: -7%;
+        top: -15px;
+        height: 200%;
+        transition:.3s;
+    }
+    .cereal_:hover img{
+        right: -150px;
+    }
+    .cereal h1{
+        color:#E4D00A;
+    }
+    .cereal .mcontent p{
+        color:white;
+    }
+    .oil .mobileTitle{
+        position: relative;
+        background-image: url('images/poster5.jpg');
+        overflow: hidden;
+    }
+    .oil .mobileTitle img{
+        position: absolute; 
+        right: 0;
+        bottom: 0;
+        height: 95%;
+
+    }
+    .oil .mcontent h1{
+        color:#7cb215;
+    }
+    .oil .mproductcontainer{
+        overflow: hidden;
+    }
+    .spice .mobileTitle{
+        position: relative;
+        background-image: url('images/spicebg.jpg');
+        overflow: hidden;
+    }
+    .spice .mobileTitle img{
+        position: absolute; 
+        right: -4%;
+        bottom: -60px;
+        height: 180%;
+        transition: .3s;
+    }
+    .spice .mcontent h1{
+        color:#FF4500;
+    }
+    .spice_:hover img{
+        right: -100px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: 300px;
+        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+        background-size: cover;
+    }
+    .dry .mobileTitle{
+        background-image: url('images/poster8.jpg');
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .dry .mobileTitle img{
+        position: absolute;
+        right: -3%;
+        top: 0%;
+        height: 180%;
+        transition:.3s;
+    }
+    .dry_:hover img{
+        right: -5%;
+    }
+    .dry h1{
+        color:#FCEDCE;
+    }
 
     
 }
@@ -1250,6 +2065,7 @@ font-weight: 700;
     }
     .grid1 ul{
         width: 100px;
+        right:clamp(13%, 14%, 15%);
     }
     .grid1 ul li{
         height: 42.5px;
@@ -1261,6 +2077,7 @@ font-weight: 700;
     #right img{
         height: 10px;
     }
+    
     .grid2 {
         display: none;
     }
@@ -1268,9 +2085,9 @@ font-weight: 700;
         display: none;
     }
     .title{
-        height: 40vh;
-        max-height: 400px;
-        min-height: 400px;
+        height: 38vh;
+        max-height: 380px;
+        min-height: 380px;
     }
     .title #t{
         font-size: clamp(20px,1.5vw,30px);
@@ -1280,28 +2097,44 @@ font-weight: 700;
     .title #t object{
         width: clamp(20px,1.5vw,30px);
     }
+    .productContainer{
+        display: grid;
+        margin: 0px auto 25px auto;
+        height: 72.5%;
+        width: 95%;
+        grid-gap: 6%;
+        grid-template-columns: 22% 78%;
+    }
     .category h1{
         font-size: clamp(18px,22px,24px);
     }
     .category p{
         font-size: clamp(16px,18px,20px);
     }
+    .category a{
+        font-size: clamp(12px,14px,16px);
+        padding: 8px;
+    }
+    .products::-webkit-scrollbar{
+        height: 6px;
+        border-radius: 10px;   
+    }
     .productitem{
         position: relative;
-        min-width: calc(100%/4);
+        min-width: calc(100%/3);
         text-align: center;
         height: 100%;
         overflow: hidden;
     }
     .productitem img{
         transition: 0.3s;
-        height: 60%;
+        height: 65%;
     }
     .productitem p{
         text-align: center;
         left:50%;
         font-weight: 500;
-        font-size: clamp(14px,16px,18px);
+        font-size: clamp(11.5px,13.5px,15.5px);
         margin: 10px;
     }
 
@@ -1315,7 +2148,7 @@ font-weight: 700;
         height: 1px;
         opacity: 50%;
         background-color: black;
-        margin: 6px auto;
+        margin: 4px auto;
         transition: .3s;
     }   
     .productitem:hover #buy::before{
@@ -1396,12 +2229,12 @@ font-weight: 700;
         left:50%;
         transform: translateX(-50%);
         bottom: 0px;
-        height: 40%;
+        height: 45%;
         transition: 0.3s;
     
     }
     .oil .category:hover img{
-        height: 35%
+        height: 40%
     }
    
     .oil .productitem:hover #buy a{
@@ -1550,6 +2383,10 @@ font-weight: 700;
     .category p{
         font-size: clamp(16px,18px,20px);
     }
+    
+    .productContainer{
+        margin: 0px auto 25px auto;
+    }
     .productitem{
         position: relative;
         min-width: calc(100%/4);
@@ -1559,13 +2396,13 @@ font-weight: 700;
     }
     .productitem img{
         transition: 0.3s;
-        height: 60%;
+        height: 65%;
     }
     .productitem p{
         text-align: center;
         left:50%;
         font-weight: 500;
-        font-size: clamp(14px,16px,18px);
+        font-size: clamp(12px,14px,16px);
         margin: 10px;
     }
 
