@@ -460,22 +460,364 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
 .mobile .mproductcontainer::-webkit-scrollbar{
     height: 0;
 }
-
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media (max-width:600px) and (min-width: 500px){
+@media (max-width:500px) and (min-width: 401px){
+    .web{
+        display: none;
+    }
+    .mobilenav1{
+        display: flex;
+        width: 100%;
+        max-height: 50px;
+        height: 50px;
+        min-height: 50px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .navelement1{
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-left: 20px;
+        height: 100%;
+    }
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height:100%
+    }
+    #Mlogo{
+        height: 100%;   
+    }
+    .mobilenav2{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30px;
+        color:white;
+        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+        background-size: cover;
+    }
+    .mobilenav2 h1{
+        font-size: clamp(8px,10px,12px);
+    }
+    .mobilenav2 h1 img{
+        height: 8px;
+    }
+    .gridContainer{
+        min-height:250px;
+        display: grid;
+        overflow: hidden;
+        width:95%;
+        margin: 15px auto;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        border-radius: 5px;
+    }
+    .grid1 .grid1Content #grid1_title{
+        margin-top: 8%;
+        left: 10%;
+        position:relative;
+        color: #641E16;
+        font-weight: 400;
+        font-size: clamp(16px,18px,20px);
+    }
+    #slogan{
+        font-size: clamp(14px, 16px, 18px);
+        font-weight: 600;
+    }
+    .grid1 .grid1Content p{
+        margin-top:5px;
+        left: 10%;
+        color:#C11B17;
+        font-size: clamp(8px, 10px, 12px);
+        position:relative;
+    }
+    #a a{
+        font-size: clamp(10px, 12px, 14px);
+    }
+    #a img{
+        height: 8px;
+    }
+    .grid1 .grid1Content #a{
+        position: relative;
+        margin-top: 15px;
+        font-weight: 500;  
+    }
+    .grid1 .grid1Content h1 img{
+        height: 30px;
+    }
+    .grid1:hover .grid1Content #product1{
+        right: 4%;
+    }
+    .grid1 .grid1Content #smallpic{
+        height: 65%;
+        position: absolute;
+        bottom: -25%;
+        left: -15%;
+        transition: 0.3s;
+    }
+    .grid1:hover .grid1Content #smallpic{
+        height: 70%;
+    }
+    .grid1 ul{
+        width: 60px;
+        bottom:6%;
+        right:18%;
+    }
+    .grid1 ul li{
+        height: 25px;
+        width: 25px;
+    }
+    #left img{
+        height: 6px;
+    }
+    #right img{
+        height: 6px;
+    }
+    .grid2{
+        display: none;
+    }
+    .grid3{
+        display: none;
+    }
+    .mcategory{
+        display: block;
+        height: 30vh;
+        min-height: 280px;
+        max-height: 280px;
+        width: 95%;
+        margin: 15px auto;
+        border-radius: 3px;
+        background-color: white;
+    }
+    .mobileTitle{
+        top:10px;
+        height: 8vh;
+        min-height: 25%;
+        max-height: 25%;
+        width: 95%;
+        margin: 0px auto;
+        border-radius: 3px;
+    }
+    .mcatename{
+        width: 95%;
+        position: relative;
+        font-size: clamp(16px, 18px, 20px);
+        font-weight: 500;
+        margin: 0px auto;
+        top: 5px;
+    }
+    .mcatename::after{
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        margin: 5px auto;
+        opacity: 30%;
+        background-color: black;
+    }
+    .mcontent{
+        position: absolute;
+        top: 23%;
+        left: 20%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .mcontent h1{
+        font-size: clamp(12px,14px,16px);
+    }
+    .mcontent p{
+        font-size: clamp(10px,12px,14px);
+        color: white;
+    }
+    .mcontent::after{
+        display: block;
+        position:absolute;
+        top: -15%;
+        right: -20%;
+        content: '';
+        background-color: white;
+        height: 50px;
+        width: 2px;
+        opacity: 0%;
+        transition: 0.5s;
+    }
+    .mcateshop p{
+        display: inline-block;
+        border-radius: 5px;
+        background-color: white;
+        padding: 5px;
+        position: absolute;
+        left:45%;
+        top:34%;
+        opacity: 0;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .mcateshop p a{
+        font-size: clamp(10px,12px,14px);
+    }
+    .mobileTitle:hover .mcontent{
+        left: 5%;
+    }
+    .mobileTitle:hover .mcontent::after{
+        opacity: 100%;
+    }
+    .mobileTitle:hover .mcateshop p{
+        opacity: 100%;
+    }
+    
+    .mproductcontainer{
+        top:50%;
+        bottom: 50%;
+        transform: translate(0%,-70%);
+        position: relative;
+        height: 63%;
+        width: 95%;
+        display: flex;
+        overflow-x:auto; 
+    }
+    .mproduct{
+        display: block;
+        text-align: center;
+        height: 100%;
+        width: 0px;
+        font-size: clamp(10px,12px,14px);
+        min-width: calc(100%/3);
+        max-width: calc(100%/3);
+        margin-right:10px;
+        overflow-x: hidden;
+    }
+    .mproduct img{
+        height: 68%;
+    }
+    .sugar .mobileTitle{
+        background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
+        overflow: hidden;
+        position: relative;
+    }
+    .sugar .mobileTitle img{
+        position: absolute;
+        right: -20px;
+        top: 0px;
+        height: 260%;
+        transition:.3s;
+    }
+    .sugar_:hover img{
+        right: -50px;
+    }
+    .sugar h1{
+        color:#FFAA33;
+    }
+    
+    .cereal .mobileTitle{
+        background-image: url('images/cerealbg.jpg');
+        overflow: hidden;
+        position: relative;
+    }
+    .cereal .mobileTitle img{
+        position: absolute;
+        right: -10%;
+        top: -15px;
+        height: 180%;
+        transition:.3s;
+    }
+    .cereal_:hover img{
+        right: -25%;
+    }
+    .cereal h1{
+        color:#E4D00A;
+    }
+    .cereal .mcontent p{
+        color:white;
+    }
+    .oil .mobileTitle{
+        position: relative;
+        background-image: url('images/poster5.jpg');
+        overflow: hidden;
+    }
+    .oil .mobileTitle img{
+        position: absolute; 
+        right: 0;
+        bottom: 0;
+        height: 95%;
+    
+    }
+    .oil .mcontent h1{
+        color:#7cb215;
+    }
+    .oil .mproductcontainer{
+        overflow: hidden;
+    }
+    .spice .mobileTitle{
+        position: relative;
+        background-image: url('images/spicebg.jpg');
+        overflow: hidden;
+    }
+    .spice .mobileTitle img{
+        position: absolute; 
+        right: -10%;
+        bottom: -60%;
+        height: 170%;
+        transition: .3s;
+    }
+    .spice .mcontent h1{
+        color:#FF4500;
+    }
+    .spice_:hover img{
+        right: -20%;
+    }
+    .dry .mobileTitle{
+        background-image: url('images/poster8.jpg');
+        overflow: hidden;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .dry .mobileTitle img{
+        position: absolute;
+        right: -3%;
+        top: 0%;
+        height: 160%;
+        transition:.3s;
+    }
+    .dry_:hover img{
+        right: -18%;
+    }
+    .dry h1{
+        color:#FCEDCE;
+    }
+    .footer{
+        width: 100%;
+        height: 300px;
+        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
+        background-size: cover;
+    }
+    }
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (max-width:600px) and (min-width: 501px){
 .web{
     display: none;
 }
 .mobilenav1{
     display: flex;
     width: 100%;
-    max-height: 60px;
-    height: 60px;
-    min-height: 60px;
+    max-height: 50px;
+    height: 50px;
+    min-height: 50px;
     align-items: center;
     justify-content: space-between;
     background-color: white;
@@ -484,53 +826,19 @@ background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+
     display: flex;
     align-items: center;
     font-size: 25px;
+    margin-left: 20px;
     height: 100%;
 }
 .menu{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 50px;
     height:100%
 }
 #Mlogo{
     height: 100%;   
 }
-.navelement2{
-    width: 40%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 60% 40%;
-    align-items: center;
-}
-.navelement2 img{
-    grid-row: span 2;
-    height: 90%;
-}
-.navelement2 h1{
-    display: inline-block;
-background: #FC466B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: clamp(18px,20px,22px);
-align-self: flex-end;
-}
-.navelement2 p{
-    display: inline-block;
-    align-self: flex-start;
-background: #FC466B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-font-size: clamp(8px,10px,12px);
-font-weight: 700;
-}
+
 .mobilenav2{
     margin: 0 auto;
     display: flex;
@@ -550,13 +858,13 @@ font-weight: 700;
     display: grid;
     overflow: hidden;
     width:95%;
-    margin: 25px auto;
+    margin: 20px auto;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     border-radius: 5px;
 }
 .grid1 .grid1Content #grid1_title{
-    margin-top: 10%;
+    margin-top: 5%;
     left: 10%;
     position:relative;
     color: #641E16;
@@ -566,14 +874,14 @@ font-weight: 700;
     margin-top:5px;
     left: 10%;
     color:#C11B17;
-    font-size: clamp(10px,12px, 14px);
+    font-size: clamp(6px,8px, 10px);
     position:relative;
 }
 .grid1 .grid1Content #a{
     position: relative;
-    font-size: 2px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 500;  
+    font-size: clamp(12px, 14px, 16px);
 }
 .grid1 .grid1Content h1{
     font-size: clamp(24px,2.5vw,70px);
@@ -581,24 +889,21 @@ font-weight: 700;
 .grid1 .grid1Content h1 img{
     height: 40px;
 }
-#a a{
-    font-size: clamp(12px, 14px, 16px);
-}
-#smallpic{
-    height: 80%;
+#a img{
+    height: 8px;
 }
 .grid1:hover .grid1Content #product1{
     right: 4%;
 }
 .grid1 .grid1Content #smallpic{
-    height: 60%;
+    height: 70%;
     position: absolute;
-    bottom: -100px;
-    left: -100px;
+    bottom: -30%;
+    left: -15%;
     transition: 0.3s;
 }
 .grid1:hover .grid1Content #smallpic{
-    height: 70%;
+    height: 80%;
 }
 .grid1 ul{
     width: 60px;
@@ -872,41 +1177,6 @@ font-weight: 700;
     #Mlogo{
         height: 100%;   
     }
-    .navelement2{
-        width: 40%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 60% 40%;
-        align-items: center;
-    }
-    .navelement2 img{
-        grid-row: span 2;
-        height: 90%;
-    }
-    .navelement2 h1{
-        display: inline-block;
-        background: #FC466B;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: clamp(18px,20px,22px);
-        align-self: flex-end;
-    }
-    .navelement2 p{
-        display: inline-block;
-        align-self: flex-start;
-        background: #FC466B;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: clamp(8px,10px,12px);
-        font-weight: 700;
-    }
     .mobilenav2{
         margin: 0 auto;
         display: flex;
@@ -933,14 +1203,14 @@ font-weight: 700;
     }
     .grid1 .grid1Content #grid1_title {
         margin-top: 8%;
-        left: 15%;
+        left: 10%;
         position: relative;
         color: #641E16;
         font-weight: 400;
     }
     .grid1 .grid1Content p{
         margin-top:5px;
-        left: 15%;
+        left: 10%;
         color:#C11B17;
         position:relative;
         font-size: clamp(10px, 12px, 18px);
@@ -957,21 +1227,18 @@ font-weight: 700;
     .grid1 .grid1Content h1 img{
         height: 50px;
     }
-    #smallpic{
-        height: 80%;
-    }
     .grid1:hover .grid1Content #product1{
         right: 4%;
     }
     .grid1 .grid1Content #smallpic{
-        height: 55%;
+        height: 65%;
         position: absolute;
         bottom: -100px;
         left: -100px;
         transition: 0.3s;
     }
     .grid1:hover .grid1Content #smallpic{
-        height: 65%;
+        height: 75%;
     }
     .grid1 ul{
         width: 70px;
@@ -1254,41 +1521,6 @@ font-weight: 700;
     #Mlogo{
         height: 100%;   
     }
-    .navelement2{
-        width: 40%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 60% 40%;
-        align-items: center;
-    }
-    .navelement2 img{
-        grid-row: span 2;
-        height: 90%;
-    }
-    .navelement2 h1{
-        display: inline-block;
-        background: #FC466B;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: clamp(18px,20px,22px);
-        align-self: flex-end;
-    }
-    .navelement2 p{
-        display: inline-block;
-        align-self: flex-start;
-        background: #FC466B;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: clamp(8px,10px,12px);
-        font-weight: 700;
-    }
     .mobilenav2{
         margin: 0 auto;
         display: flex;
@@ -1314,7 +1546,7 @@ font-weight: 700;
         border-radius: 5px;
     }
     .grid1 .grid1Content #grid1_title {
-        margin-top: 8%;
+        margin-top: 5%;
         left: 15%;
         position: relative;
         color: #641E16;
@@ -1325,10 +1557,10 @@ font-weight: 700;
         left: 15%;
         color:#C11B17;
         position:relative;
-        font-size: clamp(10px, 12px, 18px);
+        font-size: clamp(10px, 12px, 14px);
     }
     .grid1 .grid1Content #a{
-        font-size: clamp(12px, 14px, 16px);
+        font-size: clamp(14px, 16px, 18px);
     }
     .grid1 .grid1Content #a img{
         height: 10px;
@@ -1346,14 +1578,14 @@ font-weight: 700;
         right: 4%;
     }
     .grid1 .grid1Content #smallpic{
-        height: 55%;
+        height: 65%;
         position: absolute;
         bottom: -100px;
         left: -100px;
         transition: 0.3s;
     }
     .grid1:hover .grid1Content #smallpic{
-        height: 65%;
+        height: 75%;
     }
     .grid1 ul{
         width: 70px;
@@ -1372,7 +1604,7 @@ font-weight: 700;
         height: 8px;
     }
     #slogan{
-        font-size: clamp(20px, 2vw, 50px);
+        font-size: clamp(20px, 3vw, 50px);
         font-weight: 600;
     }
     .grid2{
@@ -2121,7 +2353,7 @@ font-weight: 700;
     }
     .productitem{
         position: relative;
-        min-width: calc(100%/3);
+        min-width: calc(100%/4);
         text-align: center;
         height: 100%;
         overflow: hidden;
@@ -2643,7 +2875,7 @@ font-weight: 700;
     }
     .productitem{
         position: relative;
-        min-width: calc(100%/4);
+        min-width: calc(100%/5);
         text-align: center;
         height: 100%;
         overflow: hidden;
@@ -2895,7 +3127,7 @@ font-weight: 700;
 }
 .productitem{
     position: relative;
-    min-width: calc(100%/4);
+    min-width: calc(100%/5);
     text-align: center;
     height: 100%;
     overflow: hidden;
