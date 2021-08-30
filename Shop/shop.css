@@ -12,7 +12,11 @@ body{
     background-size: 100%;
 }
 .content{
+<<<<<<< HEAD
     width: 90%;
+=======
+    width: 100%;
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     max-width: 1920px;
     margin: 0 auto;
 }
@@ -26,6 +30,7 @@ a{
 .mobilenav2{
     display:none;
 }
+<<<<<<< HEAD
 .menuList{
     display: none;
     width: 100%;
@@ -37,6 +42,8 @@ a{
 .menuList p{
     margin-bottom: 5px;
 }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
 .navBar1{
     display: flex;
     align-items: center;
@@ -44,8 +51,13 @@ a{
     background-size:cover;
     width:100%;
     background: #EBEDEF;  /* fallback for old browsers */
+<<<<<<< HEAD
     background: -webkit-radial-gradient(#F4F6F7,#E5E8E8);  /* Chrome 10-25, Safari 5.1-6 */
     background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+=======
+background: -webkit-radial-gradient(#F4F6F7,#E5E8E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
 }
 .navBar1 ul{
     display: flex;
@@ -177,7 +189,11 @@ a{
 .gridContainer{
     display: grid;
     overflow: hidden;
+<<<<<<< HEAD
     width:100%;
+=======
+    width:95%;
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     margin: 25px auto;
     grid-column-gap: 2%;
     grid-row-gap: 4% ;
@@ -358,7 +374,11 @@ a{
     display: flex;
     position: relative;
     align-items: flex-end;
+<<<<<<< HEAD
     width:100%;
+=======
+    width:95%;
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     background-color: #fff;
     margin: 25px auto;
     border-radius: 5px;
@@ -370,10 +390,17 @@ a{
 .title #t::after{
     display: block;
     content: '';
+<<<<<<< HEAD
     width: calc(0.89*90vw);
     max-width: 1725px;
     height: 1px;
     margin: clamp(10px,15px,20px) auto;
+=======
+    width: calc(0.88*100vw);
+    max-width: 1725px;
+    height: 1px;
+    margin-top: clamp(10px,15px,20px);
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     opacity: 20%;
     background-color: #000;
 }
@@ -471,6 +498,7 @@ a{
 .mobile .mproductcontainer::-webkit-scrollbar{
     height: 0;
 }
+<<<<<<< HEAD
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -488,6 +516,12 @@ a{
         width: 100%;
         min-width: 270px;
     }
+=======
+@media (max-width:350px) and (min-width: 270px){
+    .web{
+        display: none;
+    }
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .mobilenav1{
         display: flex;
         width: 100%;
@@ -614,7 +648,10 @@ a{
         min-height: 230px;
         max-height: 230px;
         width: 95%;
+<<<<<<< HEAD
         min-width: calc(0.95 * 270px);
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
         margin: 15px auto;
         border-radius: 3px;
         background-color: white;
@@ -821,7 +858,10 @@ a{
     .footer{
         width: 100%;
         height: 300px;
+<<<<<<< HEAD
         min-width: calc(0.95 * 270px);
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
         background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
         background-size: cover;
     }
@@ -836,9 +876,12 @@ a{
     .web{
         display: none;
     }
+<<<<<<< HEAD
     .content{
         width: 100%;
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .mobilenav1{
         display: flex;
         width: 100%;
@@ -1185,9 +1228,12 @@ a{
     .web{
         display: none;
     }
+<<<<<<< HEAD
     .content{
         width: 100%;
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .mobilenav1{
         display: flex;
         width: 100%;
@@ -1533,9 +1579,12 @@ a{
 .web{
     display: none;
 }
+<<<<<<< HEAD
 .content{
     width: 100%;
 }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
 .mobilenav1{
     display: flex;
     width: 100%;
@@ -1876,9 +1925,12 @@ a{
     .web{
         display: none;
     }
+<<<<<<< HEAD
     .content{
         width: 100%;
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .mobilenav1{
         display: flex;
         width: 100%;
@@ -2224,9 +2276,12 @@ a{
     .web{
         display: none;
     }
+<<<<<<< HEAD
     .content{
         width: 100%;
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .mobilenav1{
         display: flex;
         width: 100%;
@@ -2575,9 +2630,12 @@ a{
     .web{
         display: none;
     }
+<<<<<<< HEAD
     .content{
         width: 100%;
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .mobilenav1{
         display: flex;
         width: 100%;
@@ -3291,7 +3349,11 @@ a{
         font-size: clamp(10px,12px,14px);
     }
     .gridContainer{
+<<<<<<< HEAD
         min-height:550px;
+=======
+        min-height:600px;
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     }
     .grid1 .grid1Content h1{
         font-size: clamp(20px,2.5vw,70px);
@@ -3299,9 +3361,12 @@ a{
     #a a{
         font-size: 22px;
     }
+<<<<<<< HEAD
     .grid1 .grid1Content #product1{
         transform: translate(10%, -55%);
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .grid1:hover .grid1Content #product1{
         right: 4%;
     }
@@ -3555,14 +3620,21 @@ a{
         font-size: clamp(10px,12px,14px);
     }
     .gridContainer{
+<<<<<<< HEAD
         min-height:600px;
+=======
+        min-height:700px;
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     }
     .grid1 .grid1Content h1{
         font-size: clamp(20px,2.5vw,70px);
     }
+<<<<<<< HEAD
     .grid1 .grid1Content #product1{
         transform: translate(10%, -55%);
     }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
     .grid1:hover .grid1Content #product1{
         right: 4%;
     }
@@ -3781,7 +3853,11 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+<<<<<<< HEAD
 @media only screen and (min-width: 1651px) {
+=======
+@media only screen and (min-width: 1650px) {
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
 .navBar1{
     height: 6.5vh;
     min-height: 65px;
@@ -3810,14 +3886,21 @@ a{
     font-size: clamp(12px,14px,16px);
 }
 .gridContainer{
+<<<<<<< HEAD
     min-height:650px;
+=======
+    min-height:800px;
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
 }
 .grid1 .grid1Content h1{
     font-size: clamp(20px,2.5vw,70px);
 }
+<<<<<<< HEAD
 .grid1 .grid1Content #product1{
     transform: translate(10%, -55%);
 }
+=======
+>>>>>>> a02212deb3030f730674a5912a76e1f656b0764e
 .grid1:hover .grid1Content #product1{
     right: 4%;
 }
