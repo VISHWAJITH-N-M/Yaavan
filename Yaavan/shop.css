@@ -20,160 +20,6 @@ a{
     text-decoration: none;
     color: #000;
 }
-.mobilenav1{
-    display: none;
-}
-.mobilenav2{
-    display:none;
-}
-.menuList{
-    display: none;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    background-color: white;
-    font-size: clamp(10px,12px,14px);
-}
-.menuList p{
-    margin-bottom: 5px;
-}
-.navBar1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-size:cover;
-    width:100%;
-    background: #EBEDEF;  /* fallback for old browsers */
-    background: -webkit-radial-gradient(#F4F6F7,#E5E8E8);  /* Chrome 10-25, Safari 5.1-6 */
-    background: radial-gradient(#F4F6F7,#E5E8E8 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.navBar1 ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-}
-.navBar1 ul li{
-    display: inline;
-}
-.navBar1 ul li a{
-    font-weight: 600;
-    color: #000;  
-    transition: 0.3 ease-in-out;
-}
-.navBar1 ul li a::after{
-    display: block;
-    content: '';
-    width: 100%;
-    background-color: #000;
-    height: 2px;
-    margin-top: 0px;
-    border-radius: 0px;
-    opacity: 0%;
-    transition: 0.3s ease-in-out; 
-}
-.navBar1 ul li a::before{
-    display: block;
-    content: '';
-    width: 100%;
-    background-color: #000;
-    height: 2px;
-    margin-bottom: 0px;
-    border-radius: 0px;
-    opacity: 0%;
-    transition: 0.3s ease-in-out; 
-}
-.navBar1 ul li:hover a::after{
-    margin-top: 10px;
-    opacity: 100%;
-}
-.navBar1 ul li:hover a::before{
-    margin-bottom: 10px;
-    opacity: 100%;
-}
-.navBar1 span{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 30%;
-    height:100%;  
-}
-
-#organic{
-    margin:0 auto;
-    grid-row: span 2;
-    width: 80%;
-}
-.navBar1 span h1{
-    background: #FC466B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-self: flex-end;
-
-}
-.navBar1 span p{
-    align-self: flex-start;
-    background: #FC466B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    font-weight: 700;
-}
-.navBar2{
-    position: -webkit-sticky;
-    position: sticky;
-    z-index:1;
-    top: 0;
-    display: flex;
-    color: #fff;
-    background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-    background-size: cover;
-    align-items: center;
-    justify-content: space-around;
-    width:100%;
-}
-#cate{
-    display: flex;
-    position: relative;
-    align-items: center;
-    color: #fff;
-    font-weight: 700;
-}
-#cate::before{
-    position: absolute;
-    top: 0%;
-    content: '';
-    display: block;
-    height: 1px;
-    width:100%;
-    background-color: white;
-    opacity: 0%;
-    transition: 0.3s ;
-}
-#cate::after{
-    position: absolute;
-    bottom: 0%;
-    content: '';
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: white;
-    opacity: 0%;
-    transition: 0.3s ;
-}
-.navBar2 span:hover #cate::after{
-    opacity:100%;
-    bottom: -50%;
-}
-.navBar2 span:hover #cate::before{
-    opacity:100%;
-    top: -50%;
-}
 .gridContainer{
     display: grid;
     overflow: hidden;
@@ -189,7 +35,7 @@ a{
     position: relative;
     grid-row: span 2;
     background-color: white;
-    background-image: url('images/poster5.png');
+    background-image: url('assets/images/poster5.png');
     background-size: cover;
     border-radius: 5px;
 }
@@ -321,7 +167,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('images/poster6.jpg');
+    background-image: url('assets/images/poster6.jpg');
     background-size: cover;
     border-radius: 5px;
     text-align: center;
@@ -468,6 +314,11 @@ a{
 .productitem:hover .productitemOverlay{
     opacity: 30%;
 }
+.mcategory{
+    display: block;
+    width: 95%;
+    background-color: white;
+}
 .mobile .mproductcontainer::-webkit-scrollbar{
     height: 0;
 }
@@ -485,57 +336,18 @@ a{
         display: none;
     }
     .content{
-        width: 100%;
-        min-width: 270px;
+        width:100%;
     }
     .mobilenav1{
-        display: flex;
-        width: 100%;
-        max-height: 35px;
-        height: 40px;
-        min-height: 35px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-    }
-    .navelement1{
-        display: flex;
-        align-items: center;
-        font-size: 14px;
-        margin-left: 20px;
-        height: 100%;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height:100%
-    }
-    #Mlogo{
-        height: 100%;   
+        min-width: calc(0.95 * 270px);
     }
     .mobilenav2{
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 30px;
-        color:white;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-    .mobilenav2 h1{
-        font-size: clamp(8px,10px,12px);
-    }
-    .mobilenav2 h1 img{
-        height: 8px;
+        min-width: calc(0.95 * 270px);
     }
     .gridContainer{
         min-height:180px;
-        display: grid;
-        overflow: hidden;
         width:95%;
+        min-width: calc(0.95 * 270px);
         margin: 15px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
@@ -544,32 +356,22 @@ a{
     .grid1 .grid1Content #grid1_title{
         margin-top: 8%;
         left: 10%;
-        position:relative;
-        color: #641E16;
-        font-weight: 400;
         font-size: clamp(10px,12px,14px);
     }
     #slogan{
         font-size: clamp(8px,10px,12px);
-        font-weight: 600;
     }
     .grid1 .grid1Content p{
         margin-top:3px;
         left: 10%;
-        color:#C11B17;
         font-size: clamp(4px, 6px, 8px);
-        position:relative;
     }
     #a a{
         font-size: clamp(8px, 10px, 12px);
     }
-    #a img{
-        height: 6px;
-    }
     .grid1 .grid1Content #a{
         position: relative;
         margin-top: 15px;
-        font-weight: 500;  
     }
     .grid1 .grid1Content h1 img{
         height: 18px;
@@ -579,10 +381,8 @@ a{
     }
     .grid1 .grid1Content #smallpic{
         height: 65%;
-        position: absolute;
         bottom: -25%;
         left: -15%;
-        transition: 0.3s;
     }
     .grid1:hover .grid1Content #smallpic{
         height: 70%;
@@ -609,15 +409,12 @@ a{
         display: none;
     }
     .mcategory{
-        display: block;
         height: 30vh;
         min-height: 230px;
         max-height: 230px;
-        width: 95%;
+        border-radius: 3px;
         min-width: calc(0.95 * 270px);
         margin: 15px auto;
-        border-radius: 3px;
-        background-color: white;
     }
     .mobileTitle{
         top:10px;
@@ -742,7 +539,7 @@ a{
     }
     
     .cereal .mobileTitle{
-        background-image: url('images/cerealbg.jpg');
+        background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
@@ -764,7 +561,7 @@ a{
     }
     .oil .mobileTitle{
         position: relative;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
     .oil .mobileTitle img{
@@ -782,7 +579,7 @@ a{
     }
     .spice .mobileTitle{
         position: relative;
-        background-image: url('images/spicebg.jpg');
+        background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
     .spice .mobileTitle img{
@@ -799,7 +596,7 @@ a{
         right: -30%;
     }
     .dry .mobileTitle{
-        background-image: url('images/poster8.jpg');
+        background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         position: relative;
         background-repeat: no-repeat;
@@ -839,49 +636,6 @@ a{
     .content{
         width: 100%;
     }
-    .mobilenav1{
-        display: flex;
-        width: 100%;
-        max-height: 40px;
-        height: 40px;
-        min-height: 40px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-    }
-    .navelement1{
-        display: flex;
-        align-items: center;
-        font-size: 16px;
-        margin-left: 20px;
-        height: 100%;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height:100%
-    }
-    #Mlogo{
-        height: 100%;   
-    }
-    .mobilenav2{
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 30px;
-        color:white;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-    .mobilenav2 h1{
-        font-size: clamp(8px,10px,12px);
-    }
-    .mobilenav2 h1 img{
-        height: 8px;
-    }
     .gridContainer{
         min-height:200px;
         display: grid;
@@ -913,9 +667,6 @@ a{
     }
     #a a{
         font-size: clamp(8px, 10px, 12px);
-    }
-    #a img{
-        height: 6px;
     }
     .grid1 .grid1Content #a{
         position: relative;
@@ -1092,7 +843,7 @@ a{
     }
     
     .cereal .mobileTitle{
-        background-image: url('images/cerealbg.jpg');
+        background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
@@ -1114,7 +865,7 @@ a{
     }
     .oil .mobileTitle{
         position: relative;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
     .oil .mobileTitle img{
@@ -1132,7 +883,7 @@ a{
     }
     .spice .mobileTitle{
         position: relative;
-        background-image: url('images/spicebg.jpg');
+        background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
     .spice .mobileTitle img{
@@ -1149,7 +900,7 @@ a{
         right: -20%;
     }
     .dry .mobileTitle{
-        background-image: url('images/poster8.jpg');
+        background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         position: relative;
         background-repeat: no-repeat;
@@ -1188,49 +939,6 @@ a{
     .content{
         width: 100%;
     }
-    .mobilenav1{
-        display: flex;
-        width: 100%;
-        max-height: 50px;
-        height: 50px;
-        min-height: 50px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-    }
-    .navelement1{
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        margin-left: 20px;
-        height: 100%;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height:100%
-    }
-    #Mlogo{
-        height: 100%;   
-    }
-    .mobilenav2{
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 30px;
-        color:white;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-    .mobilenav2 h1{
-        font-size: clamp(8px,10px,12px);
-    }
-    .mobilenav2 h1 img{
-        height: 8px;
-    }
     .gridContainer{
         min-height:250px;
         display: grid;
@@ -1262,9 +970,6 @@ a{
     }
     #a a{
         font-size: clamp(10px, 12px, 14px);
-    }
-    #a img{
-        height: 8px;
     }
     .grid1 .grid1Content #a{
         position: relative;
@@ -1441,7 +1146,7 @@ a{
     }
     
     .cereal .mobileTitle{
-        background-image: url('images/cerealbg.jpg');
+        background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
@@ -1463,7 +1168,7 @@ a{
     }
     .oil .mobileTitle{
         position: relative;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
     .oil .mobileTitle img{
@@ -1481,7 +1186,7 @@ a{
     }
     .spice .mobileTitle{
         position: relative;
-        background-image: url('images/spicebg.jpg');
+        background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
     .spice .mobileTitle img{
@@ -1498,7 +1203,7 @@ a{
         right: -20%;
     }
     .dry .mobileTitle{
-        background-image: url('images/poster8.jpg');
+        background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         position: relative;
         background-repeat: no-repeat;
@@ -1536,47 +1241,6 @@ a{
 .content{
     width: 100%;
 }
-.mobilenav1{
-    display: flex;
-    width: 100%;
-    max-height: 50px;
-    height: 50px;
-    min-height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-}
-.navelement1{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    margin-left: 20px;
-    height: 100%;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    height:100%
-}
-#Mlogo{
-    height: 100%;   
-}
-
-.mobilenav2{
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    color:white;
-    background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-    background-size: cover;
-}
-.mobilenav2 h1{
-    font-size: clamp(12px,14px,16px);
-}
 .gridContainer{
     min-height:300px;
     display: grid;
@@ -1612,9 +1276,6 @@ a{
 }
 .grid1 .grid1Content h1 img{
     height: 40px;
-}
-#a img{
-    height: 8px;
 }
 .grid1:hover .grid1Content #product1{
     right: 4%;
@@ -1783,7 +1444,7 @@ a{
 }
 
 .cereal .mobileTitle{
-    background-image: url('images/cerealbg.jpg');
+    background-image: url('assets/images/cerealbg.jpg');
     overflow: hidden;
     position: relative;
 }
@@ -1805,7 +1466,7 @@ a{
 }
 .oil .mobileTitle{
     position: relative;
-    background-image: url('images/poster5.jpg');
+    background-image: url('assets/images/poster5.jpg');
     overflow: hidden;
 }
 .oil .mobileTitle img{
@@ -1823,7 +1484,7 @@ a{
 }
 .spice .mobileTitle{
     position: relative;
-    background-image: url('images/spicebg.jpg');
+    background-image: url('assets/images/spicebg.jpg');
     overflow: hidden;
 }
 .spice .mobileTitle img{
@@ -1840,7 +1501,7 @@ a{
     right: -20%;
 }
 .dry .mobileTitle{
-    background-image: url('images/poster8.jpg');
+    background-image: url('assets/images/poster8.jpg');
     overflow: hidden;
     position: relative;
     background-repeat: no-repeat;
@@ -1879,46 +1540,6 @@ a{
     .content{
         width: 100%;
     }
-    .mobilenav1{
-        display: flex;
-        width: 100%;
-        max-height: 60px;
-        height: 60px;
-        min-height: 60px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-    }
-    .navelement1{
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-        height: 100%;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 50px;
-        height:100%
-    }
-    #Mlogo{
-        height: 100%;   
-    }
-    .mobilenav2{
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 40px;
-        color:white;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-    .mobilenav2 h1{
-        font-size: clamp(12px,14px,16px);
-    }
     .gridContainer{
         min-height:400px;
         display: grid;
@@ -1946,9 +1567,7 @@ a{
     .grid1 .grid1Content #a{
         font-size: clamp(12px, 14px, 16px);
     }
-    .grid1 .grid1Content #a img{
-        height: 10px;
-    }
+
     .grid1 .grid1Content h1{
         font-size: clamp(24px,2.5vw,70px);
     }
@@ -2129,7 +1748,7 @@ a{
     }
     
     .cereal .mobileTitle{
-        background-image: url('images/cerealbg.jpg');
+        background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
@@ -2151,7 +1770,7 @@ a{
     }
     .oil .mobileTitle{
         position: relative;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
     .oil .mobileTitle img{
@@ -2169,7 +1788,7 @@ a{
     }
     .spice .mobileTitle{
         position: relative;
-        background-image: url('images/spicebg.jpg');
+        background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
     .spice .mobileTitle img{
@@ -2186,7 +1805,7 @@ a{
         right: -100px;
     }
     .dry .mobileTitle{
-        background-image: url('images/poster8.jpg');
+        background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
@@ -2227,46 +1846,6 @@ a{
     .content{
         width: 100%;
     }
-    .mobilenav1{
-        display: flex;
-        width: 100%;
-        max-height: 60px;
-        height: 60px;
-        min-height: 60px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-    }
-    .navelement1{
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-        height: 100%;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 50px;
-        height:100%
-    }
-    #Mlogo{
-        height: 100%;   
-    }
-    .mobilenav2{
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 40px;
-        color:white;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-    .mobilenav2 h1{
-        font-size: clamp(12px,14px,16px);
-    }
     .gridContainer{
         min-height:400px;
         display: grid;
@@ -2293,9 +1872,6 @@ a{
     }
     .grid1 .grid1Content #a{
         font-size: clamp(14px, 16px, 18px);
-    }
-    .grid1 .grid1Content #a img{
-        height: 10px;
     }
     .grid1 .grid1Content h1{
         font-size: clamp(24px,2.5vw,70px);
@@ -2480,7 +2056,7 @@ a{
     }
     
     .cereal .mobileTitle{
-        background-image: url('images/cerealbg.jpg');
+        background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
@@ -2502,7 +2078,7 @@ a{
     }
     .oil .mobileTitle{
         position: relative;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
     .oil .mobileTitle img{
@@ -2520,7 +2096,7 @@ a{
     }
     .spice .mobileTitle{
         position: relative;
-        background-image: url('images/spicebg.jpg');
+        background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
     .spice .mobileTitle img{
@@ -2537,7 +2113,7 @@ a{
         right: -100px;
     }
     .dry .mobileTitle{
-        background-image: url('images/poster8.jpg');
+        background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         background-size: cover;
         background-repeat: no-repeat;
@@ -2578,81 +2154,6 @@ a{
     .content{
         width: 100%;
     }
-    .mobilenav1{
-        display: flex;
-        width: 100%;
-        max-height: 60px;
-        height: 60px;
-        min-height: 60px;
-        align-items: center;
-        justify-content: space-between;
-        background-color: white;
-    }
-    .navelement1{
-        display: flex;
-        align-items: center;
-        font-size: 25px;
-        height: 100%;
-    }
-    .menu{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        width: 50px;
-        height:100%
-    }
-    #Mlogo{
-        height: 100%;   
-    }
-    .navelement2{
-        width: 40%;
-        height: 100%;
-        display: grid;
-        grid-template-columns: 25% 75%;
-        grid-template-rows: 60% 40%;
-        align-items: center;
-    }
-    .navelement2 img{
-        grid-row: span 2;
-        height: 90%;
-    }
-    .navelement2 h1{
-        display: inline-block;
-        background: #FC466B;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: clamp(18px,20px,22px);
-        align-self: flex-end;
-    }
-    .navelement2 p{
-        display: inline-block;
-        align-self: flex-start;
-        background: #FC466B;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #0089ef, #fa759e);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #0089ef, #fa759e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: clamp(8px,10px,12px);
-        font-weight: 700;
-    }
-    .mobilenav2{
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 40px;
-        color:white;
-        background-image: url('https://wallpapercave.com/wp/wp2732954.jpg');
-        background-size: cover;
-    }
-    .mobilenav2 h1{
-        font-size: clamp(12px,14px,16px);
-    }
     .gridContainer{
         min-height:500px;
         display: grid;
@@ -2678,9 +2179,6 @@ a{
     }
     .grid1 .grid1Content #a{
         font-size: clamp(16px, 18px, 20px);
-    }
-    .grid1 .grid1Content #a img{
-        height: 10px;
     }
     .grid1 .grid1Content h1{
         font-size: clamp(24px,3.5vw,70px);
@@ -2864,7 +2362,7 @@ a{
     }
     
     .cereal .mobileTitle{
-        background-image: url('images/cerealbg.jpg');
+        background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
@@ -2886,7 +2384,7 @@ a{
     }
     .oil .mobileTitle{
         position: relative;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
     .oil .mobileTitle img{
@@ -2904,7 +2402,7 @@ a{
     }
     .spice .mobileTitle{
         position: relative;
-        background-image: url('images/spicebg.jpg');
+        background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
     .spice .mobileTitle img{
@@ -2928,7 +2426,7 @@ a{
         background-size: cover;
     }
     .dry .mobileTitle{
-        background-image: url('images/poster8.jpg');
+        background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         background-repeat: no-repeat;
         background-size: cover;
@@ -2961,56 +2459,8 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width:1299px) and (min-width: 1081px){
-    .navBar1{
-        height: 6.5vh;
-        min-height: 65px;
-        max-height: 65px;
-    }
     .mobile{
         display: none;
-    }
-    .navBar1 ul li a{
-        font-size: clamp(10px,12px,14px);
-    }
-    #logo{
-        height: 6.5vh;
-    min-height: 65px;
-    max-height: 65px;
-        border-top: 5px  #5C5858 solid; 
-        border-right: 5px  #5C5858 solid; 
-        border-left: 5px  #5C5858 solid; 
-    }
-    .navBar1 span{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 30%;
-        height:100%;  
-    }
-    .navBar1 span h1{
-        font-size: clamp(16px,18px,20px);
-    }
-    .navBar1 span p{
-        font-size: clamp(8px,10px,12px);
-    }
-    .navBar2{
-        height: 5vh;
-        min-height: 50px;
-        max-height: 50px;
-    }
-    .navBar2 a{
-        font-size: clamp(10px,12px,14px);
-    }
-    .navBar2 img{
-        height: 18px;
-    }
-    .navBar2 span:hover #cate::after{
-        opacity:100%;
-        bottom: -50%;
-    }
-    .navBar2 span:hover #cate::before{
-        opacity:100%;
-        top: -50%;
     }
     .gridContainer{
         min-height:550px;
@@ -3189,7 +2639,7 @@ a{
     .oil .category{
         position: relative;
         background-size: cover;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         color:#7cb215;
     }  
     .oil .category img{
@@ -3225,7 +2675,7 @@ a{
         color: #D4AC0D;
     }
     .dry .category{
-        background-image: url('images/dryfruits.jpg');
+        background-image: url('assets/images/dryfruits.jpg');
         background-size: cover;
         background-position-y: 100%;
         color:#934a1c;
@@ -3256,39 +2706,8 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width:1429px) and (min-width: 1300px){
-    .navBar1{
-        height: 6.5vh;
-        min-height: 65px;
-        max-height: 65px;
-    }
-    .navBar1 ul li a{
-        font-size: clamp(11.5px,13.5px,15.5px);
-    }
     .mobile{
         display: none;
-    }
-    #logo{
-        height: 6.5vh;
-        min-height: 65px;
-        max-height: 65px;
-        border-top: 5px  #5C5858 solid; 
-        border-right: 5px  #5C5858 solid; 
-        border-left: 5px  #5C5858 solid; 
-    }
-    .navBar1 span{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        width: 30%;
-        height:100%;  
-    }
-    .navBar2{
-        height: 6vh;
-        min-height: 60px;
-        max-height: 60px;
-    }
-    .navBar2 a{
-        font-size: clamp(10px,12px,14px);
     }
     .gridContainer{
         min-height:550px;
@@ -3460,7 +2879,7 @@ a{
     .oil .category{
         position: relative;
         background-size: cover;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         color:#7cb215;
     }  
     .oil .category img{
@@ -3496,7 +2915,7 @@ a{
         color: #D4AC0D;
     }
     .dry .category{
-        background-image: url('images/dryfruits.jpg');
+        background-image: url('assets/images/dryfruits.jpg');
         background-size: cover;
         background-position-y: 100%;
         color:#934a1c;
@@ -3527,32 +2946,8 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width:1650px) and (min-width: 1430px)
 {
-    .navBar1{
-        height: 6.5vh;
-    min-height: 65px;
-    max-height: 65px;
-    }
-    .navBar1 ul li a{
-        font-size: clamp(12px,14px,16px);
-    }
     .mobile{
         display: none;
-    }
-    #logo{
-        height: 6.5vh;
-        min-height: 65px;
-        max-height: 65px;
-        border-top: 5px  #5C5858 solid; 
-        border-right: 5px  #5C5858 solid; 
-        border-left: 5px  #5C5858 solid; 
-    }
-    .navBar2{
-        height: 6vh;
-        min-height: 60px;
-        max-height: 60px;
-    }
-    .navBar2 a{
-        font-size: clamp(10px,12px,14px);
     }
     .gridContainer{
         min-height:600px;
@@ -3717,7 +3112,7 @@ a{
     .oil .category{
         position: relative;
         background-size: cover;
-        background-image: url('images/poster5.jpg');
+        background-image: url('assets/images/poster5.jpg');
         color:#7cb215;
     }  
     .oil .category img{
@@ -3753,7 +3148,7 @@ a{
         color: #D4AC0D;
     }
     .dry .category{
-        background-image: url('images/dryfruits.jpg');
+        background-image: url('assets/images/dryfruits.jpg');
         background-size: cover;
         background-position-y: 100%;
         color:#934a1c;
@@ -3782,33 +3177,9 @@ a{
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1651px) {
-.navBar1{
-    height: 6.5vh;
-    min-height: 65px;
-    max-height: 65px;
-}
-.navBar1 ul li a{
-    font-size: clamp(13px,15px,17px);
-}
-.mobile{
-    display: none;
-}
-#logo{
-    height: 6.5vh;
-    min-height: 65px;
-    max-height: 65px;
-    border-top: 5px  #5C5858 solid; 
-    border-right: 5px  #5C5858 solid; 
-    border-left: 5px  #5C5858 solid; 
-}
-.navBar2{
-    height: 6vh;
-    min-height: 60px;
-    max-height: 60px;
-}
-.navBar2 a{
-    font-size: clamp(12px,14px,16px);
-}
+    .mobile{
+        display: none;
+    }
 .gridContainer{
     min-height:650px;
 }
@@ -3972,7 +3343,7 @@ a{
 .oil .category{
     position: relative;
     background-size: cover;
-    background-image: url('images/poster5.jpg');
+    background-image: url('assets/images/poster5.jpg');
     color:#7cb215;
 }  
 .oil .category img{
@@ -4008,7 +3379,7 @@ a{
     color: #D4AC0D;
 }
 .dry .category{
-    background-image: url('images/dryfruits.jpg');
+    background-image: url('assets/images/dryfruits.jpg');
     background-size: cover;
     background-position-y: 100%;
     color:#934a1c;
