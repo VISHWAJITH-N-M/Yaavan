@@ -407,7 +407,6 @@ h1, h2, h3, h4, h5, h6 {
   background: url("assets/img/4.jpg") top center;
   background-size: cover;
   position: relative;
-  border-radius: 5px;
 }
 
 #hero:before {
@@ -663,7 +662,7 @@ section {
 .about-video .content h3 {
   font-weight: 700;
   font-size: 24px;
-  color: #124265;
+  color: #0B5345;
 }
 
 .about-video .content ul {
@@ -679,7 +678,7 @@ section {
 
 .about-video .content ul i {
   font-size: 24px;
-  color: #2487ce;
+  color: #52BE80;
   position: absolute;
   left: 0;
   top: -2px;
