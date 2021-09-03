@@ -38,7 +38,6 @@
                 <p>
                     <a id="text" href="#">BUY NOW &#187; </a>
                 </p>
-
             </div>
             <header class="web navBar1"> 
             <ul>
@@ -513,7 +512,7 @@
         </div>    
 </div>
 <!--Mobile View-->
-<div class="mobile oil mcategory">
+<div class="mobile Oil mcategory" id="Oil">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#7cb215" stroke-width="2" fill="white"/>
@@ -555,13 +554,13 @@
         </div>
     </div>
 </div>
-<div class="mobile sugar mcategory">
+<div class="mobile Sugar mcategory" id="Sugar">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#FFAA33" stroke-width="2" fill="white"/>
             Sorry, inline SVG isn't supported by your browser. 
           </svg>
-        Natural Sugar 
+          Natural Sweetness
     </div>
     <div class="mobileTitle sugar_">
         <div class="mcontent">
@@ -618,7 +617,7 @@
         </div>
     </div>
 </div>
-<div class="mobile spice mcategory">
+<div class="mobile Spices mcategory" id="Spices">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#EC7063" stroke-width="2" fill="white"/>
@@ -675,7 +674,7 @@
         </div>
     </div>
 </div>
-<div class="mobile cereal mcategory">
+<div class="mobile Cereals mcategory" id="Cereals">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#E4D00A" stroke-width="2" fill="white"/>
@@ -745,7 +744,7 @@
         </div>
     </div>
 </div>
-<div class="mobile dry mcategory">
+<div class="mobile Dry mcategory" id="Dry">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#a97142" stroke-width="2" fill="white"/>
@@ -802,7 +801,6 @@
 	var slogan = document.getElementById("slogan");
     var overlay = document.getElementById("Overlay");
     var title = document.getElementById("grid1_title");
-    var MenuList = document.getElementById("MenuList");
     let title_colors = ['#641E16', '#7D6608', '#28282B'];
     let overlay_colors = ['#EC7063','#F7DC6F','#99A3A4'];
     let products = ['list/chilli.png','list/turmeric.png','list/pepper.png'];
@@ -810,22 +808,7 @@
     let solgans = ["It's worth the spice.",'That Flavour magic.','The choice of chefs.'];
     let slogan_colors = ['#C11B17','#D4AC0D','#424949'];
     let i=0;
-    function openMenu(){
-        if(MenuList.style.height == '15%')
-        {
-        MenuList.style.height = '0px';
-        MenuList.style.opacity = '0%';
-        MenuList.style.visibility = 'hidden';
-        document.getElementsByClassName('menu')[0].innerHTML = '&#9776;'
-        }
-        else
-        {
-        MenuList.style.height = '15%';
-        MenuList.style.opacity = '100%';
-        MenuList.style.visibility = 'visible';
-        document.getElementsByClassName('menu')[0].innerHTML = '&#x2715;'
-        }
-    }
+    
     function slider_call(i)
     {
         slogan.style.color = slogan_colors[i];
@@ -873,5 +856,6 @@
     
     }
 </script>
+<script src="assets/js/menu.js"></script>
 </body>
 </html>

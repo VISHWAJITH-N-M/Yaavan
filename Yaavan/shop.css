@@ -8,7 +8,7 @@
 
 body{
     width:100%;
-    /*background-color: #F2F4F4;*/
+    background-color: #F2F4F4;
     background-size: 100%;
 }
 .content{
@@ -337,6 +337,7 @@ a{
     }
     .content{
         width:100%;
+        background-color: #F2F4F4;
     }
     .mobilenav1{
         min-width: calc(0.95 * 270px);
@@ -345,21 +346,20 @@ a{
         min-width: calc(0.95 * 270px);
     }
     .gridContainer{
-        min-height:180px;
-        width:95%;
+        min-height:190px;
         min-width: calc(0.95 * 270px);
-        margin: 15px auto;
+        margin: 5px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
-        border-radius: 5px;
+        border-radius: 3px;
     }
     .grid1 .grid1Content #grid1_title{
         margin-top: 8%;
         left: 10%;
-        font-size: clamp(10px,12px,14px);
+        font-size: clamp(12px,14px,16px);
     }
     #slogan{
-        font-size: clamp(8px,10px,12px);
+        font-size: clamp(10px,12px,14px);
     }
     .grid1 .grid1Content p{
         margin-top:3px;
@@ -413,17 +413,18 @@ a{
         min-height: 230px;
         max-height: 230px;
         border-radius: 3px;
-        min-width: calc(0.95 * 270px);
-        margin: 15px auto;
+        min-width: calc(0.98 * 270px);
+        margin: 8px auto;    
     }
     .mobileTitle{
         top:10px;
         height: 8vh;
         min-height: 25%;
         max-height: 25%;
-        width: 95%;
-        margin: 0px auto;
+        width: 98%;
+        margin: 5px auto;
         border-radius: 3px;
+        
     }
     .mcatename{
         width: 95%;
@@ -519,12 +520,12 @@ a{
     .mproduct img{
         height: 65%;
     }
-    .sugar .mobileTitle{
+    .Sugar .mobileTitle{
         background-image: url('https://images.unsplash.com/photo-1574110537361-ff1948fc4a57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80');
         overflow: hidden;
         position: relative;
     }
-    .sugar .mobileTitle img{
+    .Sugar .mobileTitle img{
         position: absolute;
         right: -20px;
         top: 0px;
@@ -534,16 +535,16 @@ a{
     .sugar_:hover img{
         right: -50px;
     }
-    .sugar h1{
+    .Sugar h1{
         color:#FFAA33;
     }
     
-    .cereal .mobileTitle{
+    .Cereals .mobileTitle{
         background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
-    .cereal .mobileTitle img{
+    .Cereals .mobileTitle img{
         position: absolute;
         right: -20%;
         top: -10%;
@@ -553,56 +554,56 @@ a{
     .cereal_:hover img{
         right: -30%;
     }
-    .cereal h1{
+    .Cereals h1{
         color:#E4D00A;
     }
-    .cereal .mcontent p{
+    .Cereals .mcontent p{
         color:white;
     }
-    .oil .mobileTitle{
+    .Oil .mobileTitle{
         position: relative;
         background-image: url('assets/images/poster5.jpg');
         overflow: hidden;
     }
-    .oil .mobileTitle img{
+    .Oil .mobileTitle img{
         position: absolute; 
         right: 0;
         bottom: 0;
         height: 80%;
     
     }
-    .oil .mcontent h1{
+    .Oil .mcontent h1{
         color:#7cb215;
     }
-    .oil .mproductcontainer{
+    .Oil .mproductcontainer{
         overflow: hidden;
     }
-    .spice .mobileTitle{
+    .Spices .mobileTitle{
         position: relative;
         background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
-    .spice .mobileTitle img{
+    .Spices .mobileTitle img{
         position: absolute; 
         right: -18%;
         bottom: -60%;
         height: 160%;
         transition: .3s;
     }
-    .spice .mcontent h1{
+    .Spices .mcontent h1{
         color:#FF4500;
     }
     .spice_:hover img{
         right: -30%;
     }
-    .dry .mobileTitle{
+    .Dry .mobileTitle{
         background-image: url('assets/images/poster8.jpg');
         overflow: hidden;
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .dry .mobileTitle img{
+    .Dry .mobileTitle img{
         position: absolute;
         right: -18%;
         top: 0%;
@@ -612,7 +613,7 @@ a{
     .dry_:hover img{
         right: -30%;
     }
-    .dry h1{
+    .Dry h1{
         color:#FCEDCE;
     }
     .footer{
@@ -637,11 +638,11 @@ a{
         width: 100%;
     }
     .gridContainer{
-        min-height:200px;
+        min-height:205px;
         display: grid;
         overflow: hidden;
-        width:95%;
-        margin: 15px auto;
+        width:98%;
+        margin: 5px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         border-radius: 5px;
@@ -715,8 +716,8 @@ a{
         height: 30vh;
         min-height: 250px;
         max-height: 250px;
-        width: 95%;
-        margin: 15px auto;
+        width: 98%;
+        margin: 10px auto;
         border-radius: 3px;
         background-color: white;
     }
@@ -725,7 +726,7 @@ a{
         height: 8vh;
         min-height: 25%;
         max-height: 25%;
-        width: 95%;
+        width: 98%;
         margin: 0px auto;
         border-radius: 3px;
     }
@@ -803,7 +804,7 @@ a{
         transform: translate(0%,-70%);
         position: relative;
         height: 63%;
-        width: 95%;
+        width: 98%;
         margin: 0 auto;
         display: flex;
         overflow-x:auto; 
@@ -842,12 +843,12 @@ a{
         color:#FFAA33;
     }
     
-    .cereal .mobileTitle{
+    .cereals .mobileTitle{
         background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
-    .cereal .mobileTitle img{
+    .cereals .mobileTitle img{
         position: absolute;
         right: -10%;
         top: -15px;
@@ -857,10 +858,10 @@ a{
     .cereal_:hover img{
         right: -25%;
     }
-    .cereal h1{
+    .cereals h1{
         color:#E4D00A;
     }
-    .cereal .mcontent p{
+    .cereals .mcontent p{
         color:white;
     }
     .oil .mobileTitle{
@@ -881,19 +882,19 @@ a{
     .oil .mproductcontainer{
         overflow: hidden;
     }
-    .spice .mobileTitle{
+    .spices .mobileTitle{
         position: relative;
         background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
-    .spice .mobileTitle img{
+    .spices .mobileTitle img{
         position: absolute; 
         right: -10%;
         bottom: -60%;
         height: 170%;
         transition: .3s;
     }
-    .spice .mcontent h1{
+    .spices .mcontent h1{
         color:#FF4500;
     }
     .spice_:hover img{
@@ -940,11 +941,11 @@ a{
         width: 100%;
     }
     .gridContainer{
-        min-height:250px;
+        min-height:260px;
         display: grid;
         overflow: hidden;
-        width:95%;
-        margin: 15px auto;
+        width:98%;
+        margin: 5px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         border-radius: 5px;
@@ -1018,8 +1019,8 @@ a{
         height: 30vh;
         min-height: 280px;
         max-height: 280px;
-        width: 95%;
-        margin: 15px auto;
+        width: 98%;
+        margin: 10px auto;
         border-radius: 3px;
         background-color: white;
     }
@@ -1028,7 +1029,7 @@ a{
         height: 8vh;
         min-height: 25%;
         max-height: 25%;
-        width: 95%;
+        width: 98%;
         margin: 0px auto;
         border-radius: 3px;
     }
@@ -1107,7 +1108,7 @@ a{
         margin: 0 auto;
         position: relative;
         height: 63%;
-        width: 95%;
+        width: 98%;
         display: flex;
         overflow-x:auto; 
     }
@@ -1145,12 +1146,12 @@ a{
         color:#FFAA33;
     }
     
-    .cereal .mobileTitle{
+    .cereals .mobileTitle{
         background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
-    .cereal .mobileTitle img{
+    .cereals .mobileTitle img{
         position: absolute;
         right: -10%;
         top: -15px;
@@ -1160,10 +1161,10 @@ a{
     .cereal_:hover img{
         right: -25%;
     }
-    .cereal h1{
+    .cereals h1{
         color:#E4D00A;
     }
-    .cereal .mcontent p{
+    .cereals .mcontent p{
         color:white;
     }
     .oil .mobileTitle{
@@ -1184,19 +1185,19 @@ a{
     .oil .mproductcontainer{
         overflow: hidden;
     }
-    .spice .mobileTitle{
+    .spices .mobileTitle{
         position: relative;
         background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
-    .spice .mobileTitle img{
+    .spices .mobileTitle img{
         position: absolute; 
         right: -10%;
         bottom: -60%;
         height: 170%;
         transition: .3s;
     }
-    .spice .mcontent h1{
+    .spices .mcontent h1{
         color:#FF4500;
     }
     .spice_:hover img{
@@ -1242,11 +1243,11 @@ a{
     width: 100%;
 }
 .gridContainer{
-    min-height:300px;
+    min-height:320px;
     display: grid;
     overflow: hidden;
-    width:95%;
-    margin: 20px auto;
+    width:98%;
+    margin: 10px auto;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
     border-radius: 5px;
@@ -1316,8 +1317,8 @@ a{
     height: 35vh;
     min-height: 375px;
     max-height: 375px;
-    width: 95%;
-    margin: 25px auto;
+    width: 98%;
+    margin: 10px auto;
     border-radius: 3px;
     background-color: white;
 }
@@ -1326,7 +1327,7 @@ a{
     height: 8vh;
     min-height: 25%;
     max-height: 25%;
-    width: 95%;
+    width: 98%;
     margin: 0px auto;
     border-radius: 3px;
 }
@@ -1405,7 +1406,7 @@ a{
     margin: 0 auto;
     position: relative;
     height: 230px;
-    width: 95%;
+    width: 98%;
     display: flex;
     overflow-x:auto; 
 }
@@ -1443,12 +1444,12 @@ a{
     color:#FFAA33;
 }
 
-.cereal .mobileTitle{
+.cereals .mobileTitle{
     background-image: url('assets/images/cerealbg.jpg');
     overflow: hidden;
     position: relative;
 }
-.cereal .mobileTitle img{
+.cereals .mobileTitle img{
     position: absolute;
     right: -10%;
     top: -15px;
@@ -1458,10 +1459,10 @@ a{
 .cereal_:hover img{
     right: -25%;
 }
-.cereal h1{
+.cereals h1{
     color:#E4D00A;
 }
-.cereal .mcontent p{
+.cereals .mcontent p{
     color:white;
 }
 .oil .mobileTitle{
@@ -1482,19 +1483,19 @@ a{
 .oil .mproductcontainer{
     overflow: hidden;
 }
-.spice .mobileTitle{
+.spices .mobileTitle{
     position: relative;
     background-image: url('assets/images/spicebg.jpg');
     overflow: hidden;
 }
-.spice .mobileTitle img{
+.spices .mobileTitle img{
     position: absolute; 
     right: -10%;
     bottom: -60px;
     height: 170%;
     transition: .3s;
 }
-.spice .mcontent h1{
+.spices .mcontent h1{
     color:#FF4500;
 }
 .spice_:hover img{
@@ -1541,11 +1542,11 @@ a{
         width: 100%;
     }
     .gridContainer{
-        min-height:400px;
+        min-height:410px;
         display: grid;
         overflow: hidden;
-        width:95%;
-        margin: 25px auto;
+        width:98%;
+        margin: 15px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         border-radius: 5px;
@@ -1619,8 +1620,8 @@ a{
         height: 40vh;
         min-height: 425px;
         max-height: 425px;
-        width: 95%;
-        margin: 25px auto;
+        width: 98%;
+        margin: 15px auto;
         border-radius: 3px;
         background-color: white;
     }
@@ -1629,7 +1630,7 @@ a{
         height: 10vh;
         min-height: 100px;
         max-height: 100px;
-        width: 95%;
+        width: 98%;
         margin: 0px auto;
         border-radius: 3px;
     }
@@ -1710,7 +1711,7 @@ a{
         margin: 0 auto;
         position: relative;
         height: 58%;
-        width: 95%;
+        width: 98%;
         display: flex;
         overflow-x:auto; 
     }
@@ -1747,12 +1748,12 @@ a{
         color:#FFAA33;
     }
     
-    .cereal .mobileTitle{
+    .cereals .mobileTitle{
         background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
-    .cereal .mobileTitle img{
+    .cereals .mobileTitle img{
         position: absolute;
         right: -12%;
         top: -15px;
@@ -1762,10 +1763,10 @@ a{
     .cereal_:hover img{
         right: -20%;
     }
-    .cereal h1{
+    .cereals h1{
         color:#E4D00A;
     }
-    .cereal .mcontent p{
+    .cereals .mcontent p{
         color:white;
     }
     .oil .mobileTitle{
@@ -1786,19 +1787,19 @@ a{
     .oil .mproductcontainer{
         overflow: hidden;
     }
-    .spice .mobileTitle{
+    .spices .mobileTitle{
         position: relative;
         background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
-    .spice .mobileTitle img{
+    .spices .mobileTitle img{
         position: absolute; 
         right: -10%;
         bottom: -60px;
         height: 170%;
         transition: .3s;
     }
-    .spice .mcontent h1{
+    .spices .mcontent h1{
         color:#FF4500;
     }
     .spice_:hover img{
@@ -1847,11 +1848,11 @@ a{
         width: 100%;
     }
     .gridContainer{
-        min-height:400px;
+        min-height:410px;
         display: grid;
         overflow: hidden;
-        width:95%;
-        margin: 25px auto;
+        width:98%;
+        margin: 15px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         border-radius: 5px;
@@ -1927,8 +1928,8 @@ a{
         height: 45vh;
         min-height: 425px;
         max-height: 425px;
-        width: 95%;
-        margin: 25px auto;
+        width: 98%;
+        margin: 15px auto;
         border-radius: 3px;
         background-color: white;
     }
@@ -1937,7 +1938,7 @@ a{
         height: 10vh;
         min-height: 100px;
         max-height: 100px;
-        width: 95%;
+        width: 98%;
         margin: 0px auto;
         border-radius: 3px;
     }
@@ -2018,7 +2019,7 @@ a{
         margin: 0 auto;
         position: relative;
         height: 58%;
-        width: 95%;
+        width: 98%;
         display: flex;
         overflow-x:auto; 
     }
@@ -2055,12 +2056,12 @@ a{
         color:#FFAA33;
     }
     
-    .cereal .mobileTitle{
+    .cereals .mobileTitle{
         background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
-    .cereal .mobileTitle img{
+    .cereals .mobileTitle img{
         position: absolute;
         right: -120px;
         top: -15px;
@@ -2070,10 +2071,10 @@ a{
     .cereal_:hover img{
         right: -150px;
     }
-    .cereal h1{
+    .cereals h1{
         color:#E4D00A;
     }
-    .cereal .mcontent p{
+    .cereals .mcontent p{
         color:white;
     }
     .oil .mobileTitle{
@@ -2094,19 +2095,19 @@ a{
     .oil .mproductcontainer{
         overflow: hidden;
     }
-    .spice .mobileTitle{
+    .spices .mobileTitle{
         position: relative;
         background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
-    .spice .mobileTitle img{
+    .spices .mobileTitle img{
         position: absolute; 
         right: -70px;
         bottom: -60px;
         height: 180%;
         transition: .3s;
     }
-    .spice .mcontent h1{
+    .spices .mcontent h1{
         color:#FF4500;
     }
     .spice_:hover img{
@@ -2155,11 +2156,11 @@ a{
         width: 100%;
     }
     .gridContainer{
-        min-height:500px;
+        min-height:510px;
         display: grid;
         overflow: hidden;
-        width:95%;
-        margin: 25px auto;
+        width:98%;
+        margin: 15px auto;
         grid-template-columns: 100%;
         grid-template-rows: 100%;
         border-radius: 5px;
@@ -2234,8 +2235,8 @@ a{
         height: 50vh;
         min-height: 500px;
         max-height: 500px;
-        width: 95%;
-        margin: 25px auto;
+        width: 98%;
+        margin: 15px auto;
         border-radius: 3px;
         background-color: white;
     }
@@ -2244,7 +2245,7 @@ a{
         height: 10vh;
         min-height: 120px;
         max-height: 120px;
-        width: 95%;
+        width: 98%;
         margin: 0px auto;
         border-radius: 3px;
     }
@@ -2324,7 +2325,7 @@ a{
         margin: 0 auto;
         position: relative;
         height: 58%;
-        width: 95%;
+        width: 98%;
         display: flex;
         overflow-x:auto; 
     }
@@ -2361,12 +2362,12 @@ a{
         color:#FFAA33;
     }
     
-    .cereal .mobileTitle{
+    .cereals .mobileTitle{
         background-image: url('assets/images/cerealbg.jpg');
         overflow: hidden;
         position: relative;
     }
-    .cereal .mobileTitle img{
+    .cereals .mobileTitle img{
         position: absolute;
         right: -7%;
         top: -15px;
@@ -2376,10 +2377,10 @@ a{
     .cereal_:hover img{
         right: -150px;
     }
-    .cereal h1{
+    .cereals h1{
         color:#E4D00A;
     }
-    .cereal .mcontent p{
+    .cereals .mcontent p{
         color:white;
     }
     .oil .mobileTitle{
@@ -2400,19 +2401,19 @@ a{
     .oil .mproductcontainer{
         overflow: hidden;
     }
-    .spice .mobileTitle{
+    .spices .mobileTitle{
         position: relative;
         background-image: url('assets/images/spicebg.jpg');
         overflow: hidden;
     }
-    .spice .mobileTitle img{
+    .spices .mobileTitle img{
         position: absolute; 
         right: -4%;
         bottom: -60px;
         height: 180%;
         transition: .3s;
     }
-    .spice .mcontent h1{
+    .spices .mcontent h1{
         color:#FF4500;
     }
     .spice_:hover img{
