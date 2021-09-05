@@ -13,7 +13,6 @@
         </head>
     <body >
         <div class="content">
-            
             <header class="mobile mobilenav1">
                 <div class="navelement1" onclick="openMenu()">
                     <span class="menu" >
@@ -57,16 +56,35 @@
                 <a href="index.html#contact">Contact us</a>
             </li>
             <li  >
-                <a id="text" href="#">BUY NOW</a>
+                <a href="#">BUY NOW</a>
             </li>
         </ul>
        
     </header> 
-    <nav class="mobile mobilenav2">
-        <h1>
-            Shop by Category ⯆
-        </h1>
-    </nav>
+    <div class="mobile ParentCate">
+        <nav class="mobile mobilenav2" onclick="openCate()">
+            <h1>
+                Shop by Category ⮟
+            </h1>
+        </nav>
+        <div class="mobile cateList" id="CateList" onclick="closeCate()">
+            <p>
+                <a href="#MOil">Oils </a>
+            </p>
+            <p>
+                <a href="#MSpices">Spice Powders </a>
+            </p>
+            <p>
+                <a href="#MSugar">Natural Sweetness </a>
+            </p>
+            <p>
+                <a href="#MCereals">Cereals & Pulses </a>
+            </p>
+            <p>
+                <a href="#MDry">Dry Fruits & Nuts </a>
+            </p>
+        </div>
+    </div>
     <nav class="web navBar2">
         <span>
             <a id="cate" href="#Oil">
@@ -510,9 +528,9 @@
                 </div>
             </div>
         </div>    
-</div>
+
 <!--Mobile View-->
-<div class="mobile Oil mcategory" id="Oil">
+<div class="mobile Oil mcategory" id="MOil">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#7cb215" stroke-width="2" fill="white"/>
@@ -554,7 +572,64 @@
         </div>
     </div>
 </div>
-<div class="mobile Sugar mcategory" id="Sugar">
+<div class="mobile Spices mcategory" id="MSpices">
+    <div class="mcatename"> 
+        <svg height="20" width="12">
+            <circle cx="6" cy="13" r="5" stroke="#EC7063" stroke-width="2" fill="white"/>
+            Sorry, inline SVG isn't supported by your browser. 
+          </svg>
+        Spice Powders</div>
+    <div class="mobileTitle spice_">
+        <div class="mcontent">
+            <h1>Enhancing Taste</h1>
+            <P>Enjoy the new tasty</P>
+        </div>
+        <div class="mcateshop">
+            <p><a href="amazon.com">Shop now</a></p>
+    </div>
+    <img src="assets/images/spices.png">
+    </div>
+    <div class="mproductcontainer">
+        <div class="mproduct">
+            <img src="list/Cumin POWDER.png">
+            <br>
+            <p>Cumin Powder</p>
+            <p id="price">₹100.00</p>
+        </div>
+        <div class="mproduct">
+            <img src="list/turmeric.png">
+            <br>
+            <p>Turmeric powder</p>
+            <p id="price">₹100.00</p>
+        </div>
+        <div class="mproduct">
+            <img src="list/pepper.png">
+            <br>
+            <p>Pepper Powder</p>
+            <p id="price">₹100.00</p>
+        </div>
+        <div class="mproduct">
+            <img src="list/chilli.png">
+            <br>
+            <p>Chilli Powder</p>
+            <p id="price">₹100.00</p>
+        </div>
+        <div class="mproduct">
+            <img src="list/fennel.png">
+            <br>
+            <p>Fennel Powder</p>
+            <p id="price">₹100.00</p>
+
+        </div>
+        <div class="mproduct">
+            <img src="list/coriander2.png">
+            <br>
+            <p>Coriander Powder</p>
+            <p id="price">₹100.00</p>
+        </div>
+    </div>
+</div>
+<div class="mobile Sugar mcategory" id="MSugar">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#FFAA33" stroke-width="2" fill="white"/>
@@ -617,64 +692,8 @@
         </div>
     </div>
 </div>
-<div class="mobile Spices mcategory" id="Spices">
-    <div class="mcatename"> 
-        <svg height="20" width="12">
-            <circle cx="6" cy="13" r="5" stroke="#EC7063" stroke-width="2" fill="white"/>
-            Sorry, inline SVG isn't supported by your browser. 
-          </svg>
-        Spice Powders</div>
-    <div class="mobileTitle spice_">
-        <div class="mcontent">
-            <h1>Enhancing Taste</h1>
-            <P>Enjoy the new tasty</P>
-        </div>
-        <div class="mcateshop">
-            <p><a href="amazon.com">Shop now</a></p>
-    </div>
-    <img src="assets/images/spices.png">
-    </div>
-    <div class="mproductcontainer">
-        <div class="mproduct">
-            <img src="list/Cumin POWDER.png">
-            <br>
-            <p>Cumin Powder</p>
-            <p id="price">₹100.00</p>
-        </div>
-        <div class="mproduct">
-            <img src="list/turmeric.png">
-            <br>
-            <p>Turmeric powder</p>
-            <p id="price">₹100.00</p>
-        </div>
-        <div class="mproduct">
-            <img src="list/pepper.png">
-            <br>
-            <p>Pepper Powder</p>
-            <p id="price">₹100.00</p>
-        </div>
-        <div class="mproduct">
-            <img src="list/chilli.png">
-            <br>
-            <p>Chilli Powder</p>
-            <p id="price">₹100.00</p>
-        </div>
-        <div class="mproduct">
-            <img src="list/fennel.png">
-            <br>
-            <p>Fennel Powder</p>
-            <p id="price">₹100.00</p>
 
-        </div>
-        <div class="mproduct">
-            <img src="list/coriander2.png">
-            <br>
-            <p>Coriander Powder</p>
-            <p id="price">₹100.00</p>
-        </div>
-    </div>
-</div>
-<div class="mobile Cereals mcategory" id="Cereals">
+<div class="mobile Cereals mcategory" id="MCereals">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#E4D00A" stroke-width="2" fill="white"/>
@@ -744,7 +763,7 @@
         </div>
     </div>
 </div>
-<div class="mobile Dry mcategory" id="Dry">
+<div class="mobile Dry mcategory" id="MDry">
     <div class="mcatename"> 
         <svg height="20" width="12">
             <circle cx="6" cy="13" r="5" stroke="#a97142" stroke-width="2" fill="white"/>
@@ -789,7 +808,7 @@
         </div>
     </div>
 </div>
-<!-- vishwajith-->
+</div>
 <div class="footer">
     
 </div>
