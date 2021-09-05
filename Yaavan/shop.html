@@ -12,7 +12,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         </head>
     <body >
-        <div class="content">
+        <div class="content" unselectable="on"
+        onselectstart="return false;" 
+        onmousedown="return false;">
             <header class="mobile mobilenav1">
                 <div class="navelement1" onclick="openMenu()">
                     <span class="menu" >
@@ -186,7 +188,7 @@
                         <div class="productitemOverlay">
     
                         </div>
-                        <img src="products/1.png">
+                        <img src="products/1.png"  onclick='view("products/2.png","#Oil")'>
                         
                         <p>Groundnut Oil</p>
                         <p id="price">₹100.00</p>
@@ -196,7 +198,7 @@
                         <div class="productitemOverlay">
     
                         </div>
-                        <img src="products/2.png">
+                        <img src="products/2.png" onclick='view("products/1.png","#Oil")'>
                       
                         <p>Sesame Oil</p>
                         <p id="price">₹100.00</p>
@@ -206,7 +208,7 @@
                         <div class="productitemOverlay">
     
                         </div>
-                        <img src="products/3.png">
+                        <img src="products/3.png" onclick='view("products/3.png","#Oil")'>
                         <p>Coconut Oil</p>
                         <p id="price">₹100.00</p>
                         <p id="buy"><a href="https://www.amazon.in/dp/B09BL2Z8SK/ref=cm_sw_r_wa_apa_glt_fabc_RHNJGTBD3T5PBPZWJ5GK" target="_blank" rel="noopener noreferrer">Buy Now &#187;</a></p>
@@ -232,7 +234,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="products/coriander.png" >
+                        <img src="products/coriander.png" onclick='view("products/coriander.png","#Spices")'>
                         
                         <p>Coriander Powder</p>
                         <p id="price">₹139.00</p>
@@ -242,7 +244,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="products/pepper.png" >
+                        <img src="products/pepper.png" onclick='view("products/pepper.png","#Spices")'>
                         
                         <p>Pepper Powder</p>
                         <p id="price">₹469.00</p>
@@ -252,7 +254,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="products/chilli.png">
+                        <img src="products/chilli.png"onclick='view("products/chilli.png","#Spices")'>
                        
                         <p>Chilli Powder</p>
                         <p id="price">₹99.00</p>
@@ -262,7 +264,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="products/turmeric.png" >
+                        <img src="products/turmeric.png" onclick='view("products/turmeric.png","#Spices")'>
                         
                         <p>Turmeric Powder</p>
                         <p id="price">₹39.00</p>
@@ -272,7 +274,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="products/cumin.png" >
+                        <img src="products/cumin.png" onclick='view("products/cumin.png","#Spices")'>
                         
                         <p>Cumin Powder</p>
                         <p id="price">₹100.00</p>
@@ -282,7 +284,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="products/fennel.png" >
+                        <img src="products/fennel.png" onclick='view("products/fennel.png","#Spices")'>
                         
                         <p>Fennel Powder</p>
                         <p id="price">₹100.00</p>
@@ -312,7 +314,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/brown.png">
+                        <img src="assets/images/brown.png"onclick='view("assets/images/brown.png","#Sugar")'>
                        
                         <p>Cane sugar</p>
                         <p id="price">₹100.00</p>
@@ -322,7 +324,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/csugar.png">
+                        <img src="assets/images/csugar.png"onclick='view("assets/images/csugar.png","#Sugar")'>
                         
                         <p>Coconut sugar</p>
                         <p id="price">₹100.00</p>
@@ -332,7 +334,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/brown4.png">
+                        <img src="assets/images/brown4.png"onclick='view("assets/images/brown4.png","#Sugar")'>
                        
                         <p>Palm sugar</p>
                         <p id="price">₹100.00</p>
@@ -345,7 +347,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/honey.png">
+                        <img src="assets/images/honey.png"onclick='view("assets/images/honey.png","#Sugar")'>
                         
                         <p>Coconut honey</p>
                         <p id="price">₹100.00</p>
@@ -355,7 +357,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/honey1.png">
+                        <img src="assets/images/honey1.png"onclick='view("assets/images/honey1.png","#Sugar")'>
                        
                         <p>Wild honey</p>
                         <p id="price">₹100.00</p>
@@ -383,7 +385,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/rice.png">
+                            <img src="assets/images/rice.png"onclick='view("assets/images/rice.png","#MCereals")'>
                             
                             <p>Rice</p>
                             <p id="price">₹100.00</p>
@@ -393,7 +395,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/millet.png">
+                            <img src="assets/images/millet.png"onclick='view("assets/images/millet.png","#MCereals")'>
                            
                             <p>Millet</p>
                             <p id="price">₹100.00</p>
@@ -403,7 +405,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/maize.png">
+                            <img src="assets/images/maize.png"onclick='view("assets/images/maize.png","#MCereals")'>
                            
                             <p>Maize</p>
                             <p id="price">₹100.00</p>
@@ -413,7 +415,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/barley.png">
+                            <img src="assets/images/barley.png" onclick='view("assets/images/barley.png","#MCereals")'>
                             
                             <p>Barley</p>
                             <p id="price">₹100.00</p>
@@ -423,7 +425,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/chickpeas.png">
+                            <img src="assets/images/chickpeas.png" onclick='view("assets/images/chickpeas.png","#MCereals")'>
                             
                             <p>Chickpeas</p>
                             <p id="price">₹100.00</p>
@@ -433,7 +435,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/splitgram.png">
+                            <img src="assets/images/splitgram.png" onclick='view("assets/images/splitgram.png","#MCereals")'>
                            
                             <p>Splitgram</p>
                             <p id="price">₹100.00</p>
@@ -443,7 +445,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img src="assets/images/drybeans.png">
+                            <img src="assets/images/drybeans.png" onclick='view("assets/images/drybeans.png","#MCereals")'>
                           
                             <p>Dry Beans</p>
                             <p id="price">₹100.00</p>
@@ -453,7 +455,7 @@
                             <div class="productitemOverlay">
 
                             </div>
-                            <img id="drypeas" src="assets/images/drypeas.png">
+                            <img id="drypeas" src="assets/images/drypeas.png" onclick='view("assets/images/drypeas.png","#MCereals")'>
                             <p>Dry Peas</p>
                             <p id="price">₹100.00</p>
                             <p id="buy"><a href="#">Buy Now &#187;</a></p>
@@ -478,7 +480,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/almond.png">
+                        <img src="assets/images/almond.png" onclick='view("assets/images/almond.png","#Dry")'>
                         
                         <p>Almonds</p>
                         <p id="price">₹100.00</p>
@@ -488,7 +490,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/cashews.png">
+                        <img src="assets/images/cashews.png"onclick='view("assets/images/cashews.png","#Dry")'>
                         
                         <p>Cashews</p>
                         <p id="price">₹100.00</p>
@@ -498,7 +500,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/pista.png">
+                        <img src="assets/images/pista.png" onclick='view("assets/images/pista.png","#Dry")'>
                        
                         <p>Pistachios</p>
                         <p id="price">₹100.00</p>
@@ -508,7 +510,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/walnut.png">
+                        <img src="assets/images/walnut.png"onclick='view("assets/images/walnut.png","#Dry")'>
                         
                         <p>Walnuts</p>
                         <p id="price">₹100.00</p>
@@ -519,7 +521,7 @@
                         <div class="productitemOverlay">
 
                         </div>
-                        <img src="assets/images/drygrapes.png">
+                        <img src="assets/images/drygrapes.png" onclick='view("assets/images/drygrapes.png","#Dry")'>
                         
                         <p>Dry Grapes</p>
                         <p id="price">₹100.00</p>
@@ -550,21 +552,21 @@
     </div>
     <div class="mproductcontainer">
         <div class="mproduct">
-            <img src="products/2.png">
+            <img src="products/2.png" onclick='view("products/2.png","#MOil")'>
             <br>
             <p>Coconut Oil</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="products/1.png">
+            <img src="products/1.png" onclick='view("products/1.png","#MOil")'>
             <br>
             <p>Groundnut Oil</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="products/3.png">
+            <img src="products/3.png" onclick='view("products/3.png","#MOil")'>
             <br>
             <p>Seasame Oil</p>
             <p id="price">₹100.00</p>
@@ -591,38 +593,38 @@
     </div>
     <div class="mproductcontainer">
         <div class="mproduct">
-            <img src="list/Cumin POWDER.png">
+            <img src="list/Cumin POWDER.png" onclick='view("list/Cumin POWDER.png","#MSpices")'>
             <br>
             <p>Cumin Powder</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="list/turmeric.png">
+            <img src="list/turmeric.png" onclick='view("list/turmeric.png","#MSpices")'>
             <br>
             <p>Turmeric powder</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="list/pepper.png">
+            <img src="list/pepper.png" onclick='view("list/pepper.png","#MSpices")'>
             <br>
             <p>Pepper Powder</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="list/chilli.png">
+            <img src="list/chilli.png" onclick='view("list/chilli.png","#MSpices")'>
             <br>
             <p>Chilli Powder</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="list/fennel.png">
+            <img src="list/fennel.png" onclick='view("list/fennel.png","#MSpices")'>
             <br>
             <p>Fennel Powder</p>
             <p id="price">₹100.00</p>
 
         </div>
         <div class="mproduct">
-            <img src="list/coriander2.png">
+            <img src="list/coriander2.png" onclick='view("list/coriander2.png","#MSpices")'>
             <br>
             <p>Coriander Powder</p>
             <p id="price">₹100.00</p>
@@ -649,47 +651,41 @@
     </div>
     <div class="mproductcontainer">
         <div class="mproduct">
-            <img src="assets/images/brown.png">
+            <img src="assets/images/brown.png" onclick='view("assets/images/brown.png","#MSugar")'>
             <br>
             <p>Brown Sugar</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/csugar.png">
+            <img src="assets/images/csugar.png" onclick='view("assets/images/csugar.png","#MSugar")'>
             <br>
             <p>Coconut Sugar</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/brown4.png">
+            <img src="assets/images/brown4.png" onclick='view("assets/images/brown4.png","#MSugar")'>
             <br>
             <p>Palm Sugar</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/brown2.png">
+            <img src="assets/images/honey.png" onclick='view("assets/images/honey.png","#MSugar")'>
             <br>
-            <p>Cane Sugar</p>
+            <p>Coconut Honey</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/brown3.png">
+            <img src="assets/images/honey1.png" onclick='view("assets/images/honey1.png","#MSugar")'>
             <br>
-            <p>Coconut Sugar</p>
+            <p>Wild Honey</p>
             <p id="price">₹100.00</p>
             
         </div>
-        <div class="mproduct">
-            <img src="assets/images/brown1.png">
-            <br>
-            <p>Palm Sugar</p>
-            <p id="price">₹100.00</p>
-            
-        </div>
+       
     </div>
 </div>
 
@@ -713,51 +709,58 @@
     </div>
     <div class="mproductcontainer">
         <div class="mproduct">
-            <img src="assets/images/rice.png">
+            <img src="assets/images/rice.png" onclick='view("assets/images/rice.png","#MCereals")'>
             <br>
             <p>Rice</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/millet.png">
+            <img src="assets/images/millet.png" onclick='view("assets/images/millet.png","#MCereals")'>
             <br>
             <p>Millet</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/maize.png">
+            <img src="assets/images/maize.png" onclick='view("assets/images/maize.png","#MCereals")'>
             <br>
             <p>Maize</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/barley.png">
+            <img src="assets/images/barley.png" onclick='view("assets/images/barley.png","#MCereals")'>
             <br>
             <p>Barley</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/chickpeas.png">
+            <img src="assets/images/chickpeas.png" onclick='view("assets/images/chickpeas.png","#MCereals")'>
             <br>
             <p>Chick peas</p>
             <p id="price">₹100.00</p>
            
         </div>
         <div class="mproduct">
-            <img src="assets/images/splitgram.png">
+            <img src="assets/images/splitgram.png" onclick='view("assets/images/splitgram.png","#MCereals")'>
             <br>
             <p>Splitgram</p>
             <p id="price">₹100.00</p>
             
         </div>
         <div class="mproduct">
-            <img src="assets/images/drybeans.png">
+            <img src="assets/images/drybeans.png" onclick='view("assets/images/drybeans.png","#MCereals")'>
             <br>
-            <p>Dry peas</p>
+            <p>Dry Beans</p>
+            <p id="price">₹100.00</p>
+
+        </div>
+        <div class="mproduct">
+            <img src="assets/images/drypeas.png" onclick='view("assets/images/drypeas.png","#MCereals")'>
+            <br>
+            <p>Dry Peas</p>
             <p id="price">₹100.00</p>
 
         </div>
@@ -782,33 +785,59 @@
     </div>
     <div class="mproductcontainer">
         <div class="mproduct">
-            <img src="assets/images/almond.png">
+            <img src="assets/images/almond.png" onclick='view("assets/images/almond.png","#MDry")'>
             <p>Almonds</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="assets/images/cashews.png">
+            <img src="assets/images/cashews.png" onclick='view("assets/images/cashews.png","#MDry")'>
             <p>Cashews</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="assets/images/pista.png">
+            <img src="assets/images/pista.png" onclick='view("assets/images/pista.png","#MDry")'>
             <p>Pistachios</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="assets/images/walnut.png">
+            <img src="assets/images/walnut.png" onclick='view("assets/images/walnut.png","#MDry")'>
             <p>Walnuts</p>
             <p id="price">₹100.00</p>
         </div>
         <div class="mproduct">
-            <img src="assets/images/drygrapes.png">
+            <img src="assets/images/drygrapes.png" onclick='view("assets/images/drygrapes.png","#MDry")'>
             <p>Dry Grapes</p>
             <p id="price">₹100.00</p>
         </div>
     </div>
 </div>
-</div>
+
+</div><!--content-->
+<div class="Product_view_container">
+    <div class="view_close" onclick="view_close()">
+     <a href="#" id="view_close">X</a> 
+    </div>
+    <div class="Product_view">
+        <div class="view_product_image">
+            <img src="" id="view_image">
+        </div>
+        <div class="view_product_desc">
+            <h1>Y A A V A N</h1>
+            <p> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus aliquam doloremque quidem odio. Amet sed non unde animi fugit!
+            </p>
+            <p> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus aliquam doloremque quidem odio. Amet sed non unde animi fugit!
+            </p>
+            <p> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus aliquam doloremque quidem odio. Amet sed non unde animi fugit!
+            </p>
+            <p> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus aliquam doloremque quidem odio. Amet sed non unde animi fugit!
+            </p>
+        </div>
+    </div>
+  </div>
 <div class="footer">
     
 </div>
@@ -876,5 +905,26 @@
     }
 </script>
 <script src="assets/js/menu.js"></script>
+<script>
+    let close_scroll = "";
+    function view(i,l){
+      document.getElementsByClassName("Product_view_container")[0].style.height = '100%';
+      document.getElementsByClassName("Product_view_container")[0].style.opacity = '1';
+      document.getElementsByClassName("Product_view_container")[0].style.visibility = 'visible';
+      document.getElementById("view_image").src = i;
+      document.getElementsByClassName("content")[0].style.display = 'none';
+      document.getElementsByClassName("footer")[0].style.display = 'none';
+      close_scroll = l;
+    }
+    function view_close(){
+      document.getElementsByClassName("Product_view_container")[0].style.height = '0';
+      document.getElementsByClassName("Product_view_container")[0].style.opacity = '0';
+      document.getElementsByClassName("Product_view_container")[0].style.visibility = 'hidden';
+      document.getElementsByClassName("content")[0].style.visibility = 'visible';
+      document.getElementsByClassName("content")[0].style.display = 'block';
+      document.getElementsByClassName("footer")[0].style.display = 'block';
+      document.getElementById("view_close").href = close_scroll;
+    }
+  </script>
 </body>
 </html>

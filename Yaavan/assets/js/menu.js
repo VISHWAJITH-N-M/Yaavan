@@ -36,11 +36,12 @@ function openCate(){
     }
 } 
 function closeCate(){
+    
     setTimeout(function(){ 
     CateMenu[0].style.height = ch;
     CateList.style.height = '0px';
-    CateList.style.visibility = 'hidden';
     CateList.style.opacity = '0';
-     }, 500);
+    CateList.style.visibility = 'hidden';
+     }, 1000);
     
 } 
