@@ -2001,3 +2001,12 @@ section {
       border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
       }
 }
+/* test */
+#title{
+  border: solid #bdbdbd 0.5px;
+  width: 100%;
+  padding-left: 10px;
+}
+#title:focus{
+  border-color: #5ece8f;
+}
