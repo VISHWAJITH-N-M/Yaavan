@@ -3,6 +3,7 @@ var CateMenu = document.getElementsByClassName("ParentCate");
 var CateList = document.getElementById("CateList");
 let ch = CateMenu[0].style.height;
 let test_ch = CateMenu[0].style.height + '280px';
+
 function openMenu(){
     if(MenuList.style.height == '160px')
     {
