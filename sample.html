@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+      .Product_view_container{
+        position: absolute;
+        top:0;
+        height: 0;
+        width: 100%;
+        visibility: hidden;
+        opacity: 0;
+        margin: 0px auto;
+        background-color: rgb(212, 212, 212);
+        transition: 0.5s;
+      }
+      .Product_view{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 90vh;
+        width: 94%;
+        background-color: blue;
+      }
+      .view_close{
+        cursor: pointer;
+        position: absolute;
+        top: 2%;
+        right: 3%;
+      }
+    </style>
+  </head>
+<body>
+  <button onclick="view()" >Open</button>
+<div class="Product_view_container">
+  <div class="view_close" onclick="view_close()">
+    X
+  </div>
+  <div class="Product_view">
+
+  </div>
+</div>
+<script>
+  function view(){
+    document.getElementsByClassName("Product_view_container")[0].style.height = '100%';
+    document.getElementsByClassName("Product_view_container")[0].style.opacity = '1';
+    document.getElementsByClassName("Product_view_container")[0].style.visibility = 'visible';
+  }
+  function view_close(){
+    document.getElementsByClassName("Product_view_container")[0].style.height = '0';
+    document.getElementsByClassName("Product_view_container")[0].style.opacity = '0';
+    document.getElementsByClassName("Product_view_container")[0].style.visibility = 'hidden';
+  }
+</script>
+</body>
+</html>
